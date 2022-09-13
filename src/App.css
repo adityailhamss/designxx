@@ -735,3 +735,21 @@ line-height: 60px;
 color: #444444;
 
 }
+
+.icon-btn{
+  width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.icon1{
+  position: absolute;
+  
+  background: #E9520B;
+}

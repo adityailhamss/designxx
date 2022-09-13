@@ -9,7 +9,7 @@ function LandingPage() {
             <p className='line-1'></p>
             <p className='txt-5'>Fueled by a dedicated global workforce, DesignXX combines tech and talent, offering a design solution that can make work work for you</p>
             <div className='btn-home'>
-            <button className='txt-home'>Lihat Project</button>
+            <button className='txt-home'>Lihat Project</button><img className ='icon-btn' src='assets/img/Icon.png'/>
             </div>
             <img className= "home" src ="assets/img/home.png" alt='homepag'/>
         </div>
@@ -28,14 +28,14 @@ function LandingPage() {
                 <p className='txt-work1'>How We Work?</p>
                 <p className='txt-work2'>Let's discuss what projects you have in mind</p>
                 <div className='btn-work'>
-                    <button className='work-txt-btn'>Selengkapnya</button>
+                    <button className='work-txt-btn'>Selengkapnya</button><img className ='icon-btn' src='assets/img/Icon.png'/>
                 </div>
             </div>
             <div className='columns-2'>
                 <p className='txt-meet1'>Meet Our Customers</p>
                 <p className='txt-meet2'>We have helped startups around the globe as well as fortune 500 companies</p>
                 <div className='btn-meet'>
-                    <button className='txt-btn-meet'>BUTTON</button>
+                    <button className='txt-btn-meet'>BUTTON</button><img className ='icon-btn' src='assets/img/icon1.png'/>
                 </div>
                 <img className = 'mandiri' src = 'assets/img/mandiri.png' alt='logoMandiri'/>
                 <img className = 'amartha' src = 'assets/img/amartha.png' alt='logoAmartha'/>
@@ -52,7 +52,7 @@ function LandingPage() {
             <img className = 'weDo2' src = 'assets/img/weDo2.png' alt='logoWedo2'/>
             <img className = 'weDo3' src = 'assets/img/weDo3.png' alt='logoWedo3'/>
             <div className='btn-wedo'>
-                <button className='txt-btn-wedo'>Lihat Semua</button>
+                <button className='txt-btn-wedo'>Lihat Semua</button><img className ='icon-btn' src='assets/img/Icon.png'/>
             </div>
             <p className='txt-wedo1'>What We Do?</p>
             <ul className='list-media'>
