@@ -1,12 +1,13 @@
 import './App.css';
 import LandingPage from './component/LandingPage';
 import Portofolio from './component/Portofolio';
+import Demo from './component/Demo';
 
 function App() {
   return (
-    <div className="App">
+
       <LandingPage/>
-    </div>
+
   );
 }
 

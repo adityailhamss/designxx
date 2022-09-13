@@ -753,3 +753,135 @@ flex-grow: 0;
   
   background: #E9520B;
 }
+
+.banner-home{
+  position: absolute;
+width: 1280px;
+height: 529px;
+left: 25px;
+top: 3040px;
+
+/* Orange 500 */
+
+background: #E9520B;
+}
+
+.txt-banner{
+  width: 424px;
+height: 144px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 72px;
+/* or 112% */
+
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.frame-txt-banner{
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 424px;
+height: 369px;
+left: 80px;
+top: 80px;
+
+}
+
+.txt-banner1{
+  width: 356px;
+height: 96px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 32px;
+/* or 178% */
+
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.btn-banner{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 16px;
+gap: 10px;
+
+width: 300px;
+height: 54px;
+
+background: #FFD966;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+.txt-btn-banner{
+
+
+/* Button/Medium/Reg */
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 54px;
+/* identical to box height, or 225% */
+
+letter-spacing: 0.24em;
+text-transform: uppercase;
+
+color: #444444;
+}
+
+.phone1{
+  position: absolute;
+width: 235px;
+height: 439px;
+left: 571px;
+top: 42px;
+
+background: url(/public/assets/img/phone1.png);
+}
+
+.phone2{
+  position: absolute;
+width: 235px;
+height: 439px;
+left: 824px;
+top: -229px;
+
+background: url(/public/assets/img/phone2.png);
+}
+
