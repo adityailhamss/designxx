@@ -916,7 +916,7 @@ background: url(/public/assets/img/phone2.png);
     color: #414141;
     }
 
-.txt-1 {
+.styletxt-1 {
   position: absolute;
   left: 98px;
   top: 245px;
@@ -928,7 +928,7 @@ background: url(/public/assets/img/phone2.png);
   color: #9F9F9F;
 }
 
-.txt-2 {
+.styletxt-2 {
   position: absolute;
   width: 881px;
   height: 48px;
@@ -942,7 +942,7 @@ background: url(/public/assets/img/phone2.png);
   color: #9F9F9F;
 }
 
-.txt-3{
+.styletxt-3{
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -956,7 +956,7 @@ background: url(/public/assets/img/phone2.png);
   flex-grow: 0;
 }
 
-.txt-4 {
+.styletxt-4 {
   width: 921px;
   height: 48px;
   font-family: 'Poppins';
@@ -972,7 +972,7 @@ background: url(/public/assets/img/phone2.png);
   flex-grow: 0;
 }
 
-.txt-5 {
+.styletxt-5 {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
@@ -1133,3 +1133,22 @@ top: 1017px;
 top: 669px;
 }
 
+.frm-o-1 {
+  width: 678px;
+  height: 72px;
+  padding-top: 149px;
+  padding-left: 301px;
+  padding-right: 301px;
+}
+
+.txt-o-1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 72px;
+  color: #414141;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
