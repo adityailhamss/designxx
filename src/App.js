@@ -1,12 +1,14 @@
 import './App.css';
 import LandingPage from './component/LandingPage';
-import Portofolio from './component/Portofolio';
+import Portfolio from './component/Portfolio';
 import Demo from './component/Demo';
 
 function App() {
   return (
 
-      <LandingPage/>
+      
+      <Portfolio />
+      
 
   );
 }

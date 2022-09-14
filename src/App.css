@@ -885,3 +885,251 @@ top: -229px;
 background: url(/public/assets/img/phone2.png);
 }
 
+/* agy */
+
+.txt-box {
+  left: 98px;
+  top: 149px;
+}
+
+.h1a {
+  position: absolute;
+  left: 98px;
+  top: 149px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 72px;
+  color: #414141;
+  }
+
+  .h1b {
+    position: absolute;
+    left: 98px;
+    top: 865px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 72px;
+    color: #414141;
+    }
+
+.txt-1 {
+  position: absolute;
+  left: 98px;
+  top: 245px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+
+.txt-2 {
+  position: absolute;
+  width: 881px;
+  height: 48px;
+  left: 98px;
+  top: 961px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+
+.txt-3{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 72px;
+  text-align: center;
+  color: #414141;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.txt-4 {
+  width: 921px;
+  height: 48px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #9F9F9F;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.txt-5 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+
+.gmbr-1 {
+  position: absolute;
+  width: 480px;
+  height: 344px;
+  left: 98px;
+  top: 301px;
+  background: linear-gradient(0deg, rgba(68, 68, 68, 0.25), rgba(68, 68, 68, 0.25));
+  border-radius: 8px;
+}
+
+.gmbr-2 {
+  position: absolute;
+  width: 277px;
+  height: 160px;
+  left: 602px;
+  top: 301px;
+  border-radius: 8px;
+}
+
+.gmbr-3{
+  position: absolute;
+  width: 277px;
+  height: 160px;
+  left: 602px;
+  top: 485px;
+  border-radius: 8px;
+}
+
+.gmbr-4 {
+  position: absolute;
+  width: 277px;
+  height: 160px;
+  left: 903px;
+  top: 301px;
+  border-radius: 8px;
+}
+
+.gmbr-5 {
+  position: absolute;
+  width: 277px;
+  height: 160px;
+  left: 903px;
+  top: 485px;
+  border-radius: 8px;
+}
+
+.gmbr-6 {
+  position: absolute;
+  width: 252px;
+  height: 160px;
+  left: 101px;
+  top: 669px;
+  border-radius: 8px;
+}
+
+.gmbr-7 {
+  position: absolute;
+  width: 252px;
+  height: 160px;
+  left: 377px;
+  top: 669px;
+  border-radius: 8px;
+}
+
+.gmbr-8 {
+  position: absolute;
+  width: 253px;
+  height: 160px;
+  left: 653px;
+  top: 669px;
+  border-radius: 8px;
+}
+
+.gmbr-9 {
+  position: absolute;
+  width: 252px;
+  height: 160px;
+  left: 930px;
+  top: 669px;
+  border-radius: 8px;
+}
+
+.gmbr-10 {
+  position: absolute;
+  width: 338px;
+  height: 235px;
+  left: 101px;
+  top: 1017px;
+  border-radius: 8px;
+}
+
+.gmbr-11 {
+  position: absolute;
+  width: 338px;
+  height: 235px;
+  left: 472px;
+  top: 1017px;
+  border-radius: 8px;
+}
+
+.gmbr-12 {
+  position: absolute;
+  width: 340px;
+  height: 235px;
+  left: 842px;
+top: 1017px;
+  border-radius: 8px;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 80px;
+  gap: 30px;
+  position: absolute;
+  width: 1081px;
+  height: 330px;
+  left: 101px;
+  top: 1301px;
+  background: #FFEFE8;
+}
+
+.box-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 10px;
+  width: 283px;
+  height: 54px;
+  background: #E9520B;
+  border-radius: 4px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.flx-1 {
+  left: 101px;
+top: 669px;
+}
+
