@@ -3,21 +3,32 @@ import '../Demo.css';
 
 function Demo() {
   return (
-    <div className='container-demo'>
+    <div className='container'>
+      <div className='container-demo'>
         <p className='txt-demo'>Book a call with us</p>
         <p className='txt-demo1'>Fill out the form to schedule a consultation with a DesignXX expert</p>
-        <div className='frame1-demo'>
-            <p className='txt-email'>
-                Email
-            </p>
-            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Sudah Ditulis" img src='assets/img/iconx.png'></input>
-        </div>
-        <div>
-            <p className='txt-company'>
-                Password
-            </p>
-            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Sudah Ditulis" img src='assets/img/iconx.png'></input>
-            </div>
+      <div class="mb-4">
+      <label class="txt-form-email block text-gray-700 text-sm font-bold mb-2" for="email">
+        Email
+      </label>
+      <input class="form-email shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Sudah Ditulis"/>
+    </div>
+    <div class="mb-6">
+      <label class="txt-form-email block text-gray-700 text-sm font-bold mb-2" for="company">
+        Company
+      </label>
+      <input class="form-email shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="company" type="text" placeholder="Sudah Ditulis"/>
+      <p className='txt-clicking'>By clicking next, you agree to receive communications from DesignXX in accordance with our <b>Privacy Policy</b></p>
+    </div>
+    <div className="frame-btn-demo">
+          <div className='btn-video-demo'>
+            <button className='btn-video'>Video Demo</button>
+          </div>
+          <div className='btn-book'>
+            <button className='btn-call'>Book A Call</button>
+          </div>
+    </div>
+    </div>
     </div>
   )
 }
