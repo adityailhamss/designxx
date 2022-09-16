@@ -226,9 +226,8 @@ flex-grow: 0;
 }
 
 .btn-video-demo{
-    box-sizing: border-box;
+box-sizing: border-box;
 
-/* Auto layout */
 
 display: flex;
 flex-direction: row;
@@ -254,25 +253,20 @@ flex-grow: 1;
 }
 
 .btn-video{
-
-/* Button/Medium/Reg */
+width: 327px;
+height: 54px;
 
 font-family: 'DM Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 54px;
-/* identical to box height, or 225% */
 
 letter-spacing: 0.24em;
 text-transform: uppercase;
 
-/* Orange 500 */
 
 color: #E9520B;
-
-
-/* Inside auto layout */
 
 flex: none;
 order: 0;
@@ -303,22 +297,19 @@ flex-grow: 1;
 }
 
 .btn-call{
-
-/* Button/Medium/Reg */
+width: 327px;
+height: 54px;
 
 font-family: 'DM Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 54px;
-/* identical to box height, or 225% */
 
 text-align: center;
 letter-spacing: 0.24em;
 text-transform: uppercase;
 
-/* White */
 
 color: #FFFFFF;
-
 }
