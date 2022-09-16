@@ -1,7 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../Demo.css';
 
 function Demo() {
+  const navigate = useNavigate();
+
+    const StepTwo = () => {
+        navigate('/StepTwo');
+    };
   return (
     <div className='container'>
       <div className='container-demo'>
@@ -25,7 +31,7 @@ function Demo() {
             <button className='btn-video'>Video Demo</button>
           </div>
           <div className='btn-book'>
-            <button className='btn-call'>Book A Call</button>
+            <button onClick={StepTwo} className='btn-call'>Book A Call</button>
           </div>
     </div>
     </div>

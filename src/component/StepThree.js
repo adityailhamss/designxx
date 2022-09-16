@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../StepThree.css';
+import CalendarPopup from './CalendarPopup';
+import {useNavigate} from 'react-router-dom';
 
 function StepThree() {
+    const navigate = useNavigate();
+
+    const StepTwo = () => {
+        navigate('/StepTwo');
+    };
+
+    const [showMyModal, setShowMyModal] = useState(false);
+
+    const handleOnClose = () => setShowMyModal(false)
   return (
     <div className='container'>
         <div className='frame-step-three'>
@@ -56,18 +67,18 @@ function StepThree() {
             </div>
             <div className='frame-btn-step'>
                 <div className='frame-btn-previous'>
-                    <button className='btn-previous'>
+                    <button onClick={StepTwo} className='btn-previous'>
                         Previous
                     </button>
                 </div>
-                <div className='frame-btn-next'>
-                    <button className='btn-next'>
+                <div className='frame-btn-next-step'>
+                    <button onClick={() => setShowMyModal(true)} className='btn-next-step' >
                         Next
                     </button>
-                    
                 </div>
             </div>
         </div>
+        <CalendarPopup visible={showMyModal}/>
     </div>
   )
 }

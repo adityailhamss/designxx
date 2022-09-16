@@ -1,8 +1,19 @@
 import React from 'react';
 import '../StepTwo.css';
 import '../App.css';
+import StepThree from './StepThree';
+import {useNavigate} from 'react-router-dom';
 
 function StepTwo() {
+    const navigate = useNavigate();
+
+    const Demo = () => {
+        navigate('/Demo');
+    };
+
+    const StepThree = () => {
+        navigate('/StepThree');
+    };
   return (
     <div className='container'>
         <div className='frame-step-two'>
@@ -24,40 +35,39 @@ function StepTwo() {
                 <p className='txt-what-consult'>Fill out the form to schedule a consultation with a DesignXX expert</p>
             </div>
             <div className='btn-list-step'>
-                <p className='txt-list-step-sosmed'>Social Media Manajemen</p>
+                <button className='txt-list-step-sosmed'>Social Media Manajemen</button>
             </div>
             <div className='btn-list-step'>
-                <p className='txt-list-step-sosmed'>Digital Ads & Marketing</p>
+                <button className='txt-list-step-sosmed'>Digital Ads & Marketing</button>
             </div>
             <div className='btn-list-step'>
-                <p className='txt-list-step-sosmed'>Motion Graphic</p>
+                <button className='txt-list-step-sosmed'>Motion Graphic</button>
             </div>
             <div className='btn-list-step'>
-                <p className='txt-list-step-sosmed'>Presentation & Power Point</p>
+                <button className='txt-list-step-sosmed'>Presentation & Power Point</button>
             </div>
             <div className='btn-list-step'>
-                <p className='txt-list-step-sosmed'>Logos & Branding</p>
+                <button className='txt-list-step-sosmed'>Logos & Branding</button>
             </div>
             <div className='btn-list-step'>
-                <p className='txt-list-step-sosmed'>Ilustrations</p>
+                <button className='txt-list-step-sosmed'>Ilustrations</button>
             </div>
             <div className='btn-list-step'>
-                <p className='txt-list-step-sosmed'>Print & Merchandise</p>
+                <button className='txt-list-step-sosmed'>Print & Merchandise</button>
             </div>
             <div className='btn-list-step'>
-                <p className='txt-list-step-sosmed'>Other</p>
+                <button className='txt-list-step-sosmed'>Other</button>
             </div>
             <div className='frame-btn-step'>
                 <div className='frame-btn-previous'>
-                    <button className='btn-previous'>
+                    <button onClick={Demo} className='btn-previous'>
                         Previous
                     </button>
                 </div>
-                <div className='frame-btn-next'>
-                    <button className='btn-next'>
+                <div className='frame-btn-next-step'>
+                    <button onClick={StepThree} className='btn-next-step'>
                         Next
                     </button>
-                    
                 </div>
             </div>
         </div>
