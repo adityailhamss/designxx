@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../StepTwo.css';
 import '../App.css';
 import StepThree from './StepThree';
 import {useNavigate} from 'react-router-dom';
 
 function StepTwo() {
+    const [changeColor, setChangeColor] = useState(false)
+
+    //function for changeColor
+    const handleClick = () => {
+        setChangeColor(!changeColor)
+    }
+
+    //function for navigate
     const navigate = useNavigate();
 
     const Demo = () => {
@@ -35,7 +43,7 @@ function StepTwo() {
                 <p className='txt-what-consult'>Fill out the form to schedule a consultation with a DesignXX expert</p>
             </div>
             <div className='btn-list-step'>
-                <button className='txt-list-step-sosmed'>Social Media Manajemen</button>
+                <button onClick={handleClick} className={`txt-list-step-sosmed ${(changeColor === true)? `bg-gray-77` : `bg-red-300` }`}>Social Media Manajemen</button>
             </div>
             <div className='btn-list-step'>
                 <button className='txt-list-step-sosmed'>Digital Ads & Marketing</button>
