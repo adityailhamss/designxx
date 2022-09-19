@@ -9,17 +9,21 @@ import CalendarPopup from "./component/CalendarPopup";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HowItWork from "./component/HowItWork";
+import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
 
 function App() {
   const [showMyModal, setShowMyModal] = useState(false);
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/demo" element={<Demo />} />
         <Route path="/steptwo" element={<StepTwo />} />
         <Route path="/stepthree" element={<StepThree />} />
         <Route path="/howitworks" element={<HowItWork />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
