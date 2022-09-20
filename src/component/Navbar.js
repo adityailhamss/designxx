@@ -24,7 +24,7 @@ const Navbar = () => {
           </li>
           <li className="py-8">
             <NavLink
-              to={"/portofolio"}
+              to={"/Portfolio"}
               className="py-8 px-6 tracking-widest"
               style={(isActive) => ({
                 color: isActive.isActive ? "#E9520B" : "#C4C4C4",

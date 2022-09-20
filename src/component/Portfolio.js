@@ -1,73 +1,88 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import "@fontsource/poppins";
 import "@fontsource/dm-sans";
 
-function portofolio() {
+function Portfolio() {
+  const navigate = useNavigate();
+
+    const Demo = () => {
+        navigate('/demo');
+    };
+
   return (
-    <div className='container'>
-      <div className='txt-box'>
-        <h1 className='h1a '>Explore Our Projects</h1>
-        <p className='styletxt-1'>Check what's our team did and make your project look trendy and professional.</p>
-      </div>
-          
+    <div className='px-24 py-20 flex-row'>
+        <div className='flex flex-col w-full gap-8 text-[#414141]'>
+            <h1 className="font-bold text-3xl lg:text-6xl lg:leading-[4.5rem] text-center lg:text-left">Explore Our Projects</h1>
+            <p className="text-center lg:text-left">
+            Check what's our team did and make your project look trendy and professional.
+            </p>
+        </div>
+        <div className=' pt-10 flex-row lg:w-[1000px]'>
+            <div className='grid grid-rows-4 lg:grid-flow-col gap-6'>
+                <div class="row-span-4 col-span-4 lg:w-[480px] lg:h-[344px] rounded-lg">
+                    <img src='./img/Rectangle 29.png' />
+                </div>
+                <div class="row-span-2 col-span-2 lg:w-[277px] lg:h-[160px] rounded-lg">
+                    <img src='./img/Rectangle 30.png' />
+                </div>
+                <div class="row-span-2 col-span-2 lg:w-[277px] lg:h-[160px] rounded-lg">
+                    <img src='./img/Rectangle 32.png' />
+                </div>
+                <div class="row-span-2 col-span-2 lg:w-[277px] lg:h-[160px] rounded-lg">
+                    <img src='./img/Rectangle 31.png' />
+                </div>
+                <div class="row-span-2 col-span-2 lg:w-[277px] lg:h-[160px] rounded-lg">
+                    <img src='./img/Rectangle 33.png' />
+                </div>
+            </div>
+            <div className='pt-6 grid grid-row-2 lg:grid-flow-col gap-6'>
+                <div class="row-span-2 col-span-2 lg:w-[252px] lg:h-[160px] rounded-lg">
+                    <img src='./img/Rectangle 34.png' />
+                </div>
+            
+                <div class="row-span-2 col-span-2 lg:w-[252px] lg:h-[160px] rounded-lg">
+                    <img src='./img/Rectangle 35.png' />
+                </div>
+                <div class="row-span-2 col-span-2 lg:w-[252px] lg:h-[160px] rounded-lg">
+                    <img src='./img/Rectangle 36.png' />
+                </div>
+                <div class="row-span-2 col-span-2 lg:w-[252px] lg:h-[160px] rounded-lg">
+                    <img src='./img/Rectangle 37.png' />
+                </div>
+                </div>
+        </div>
+        <div className='py-6 flex flex-col w-full gap-8 text-[#414141] items-center'>
+            <h1 className="font-bold text-3xl lg:text-6xl lg:leading-[4.5rem] text-center lg:text-left">Unlock your inner creator</h1>
+            <p className="text-center lg:text-left lg:w-[734px]">
+            Get the inspiration you need with these collections carefully selected to boost your project's engagement
+            </p>
+        </div>
+        <div className='pt-6 grid lg:grid-flow-col gap-6 lg:w-[1000px]'>
+            <div class="row-span-3 col-span-3 lg:w-[338px] lg:h-[235px] rounded-lg">
+                <img src='./img/Rectangle 41.png' />
+            </div>
+            <div class="row-span-3 col-span-3 lg:w-[338px] lg:h-[235px] rounded-lg">
+                <img src='./img/Rectangle 39.png' />
+            </div>
+            <div class="row-span-3 col-span-3 lg:w-[338px] lg:h-[235px] rounded-lg">
+                <img src='./img/Rectangle 40.png' />
+            </div>
+        </div>
         
-        <div class="grid grid-rows-2 grid-flow-col gap-4"></div>
-          <div>
-            <img className='row-span-2 col-span-2 gmbr-1' src='./img/Rectangle 29.png' alt='' />
-          </div> 
-          <div>
-            <img className='row-span-1 col-span-1 gmbr-2' src='./img/Rectangle 30.png' alt='' />
-          </div>    
-          <div>
-            <img className='row-span-1 col-span-1 gmbr-3' src='./img/Rectangle 32.png' alt='' />
-          </div>
+        <div className='pt-6 '>
+            <div className='pt-6 bg-[#FFEFE8] lg:w-[1081px] lg:h-[330px] text-center '>
+                <h1 className="font-[Poppins] text-3xl lg:text-6xl lg:leading-[4.5rem] text-center">Ready to try DesignXX?</h1>
+                <p className='pt-7 text-base '>Create your project today and get your design tomorrow. It's that simple. Try design today 30-day risk-free</p>
+                <button onClick={Demo} className='mt-7 box-border bg-[#E9520B] font-sans text-white lg:w-72 lg:h-14'>BOOK A DEMO</button>
+            </div>
+        </div>
+        </div>
+                
         
-        <div>
-          <img className='row-span-1 col-span-1 gmbr-4' src='./img/Rectangle 31.png' alt='' />
-        </div>
-        <div>
-          <img className='row-span-1 col-span-1 gmbr-5' src='./img/Rectangle 33.png' alt='' />
-        </div>
-        <div>
-          <img className='row-span-1 col-span-1 gmbr-6' src='./img/Rectangle 34.png' alt='' />
-        </div>
-        <div>
-          <img className='gmbr-7' src='./img/Rectangle 35.png' alt='' />
-        </div>                
-        <div>
-          <img className=' gmbr-8' src='./img/Rectangle 36.png' alt='' />
-        </div>    
-        <div>
-          <img className='gmbr-9 ' src='./img/Rectangle 37.png' alt='' />
-        </div>
-        <div>
-          <p className='h1b'>Unlock your inner creator</p>
-        </div>
-        <div>
-          <p className='styletxt-2'>Get the inspiration you need with these collections carefully selected to boost your project's engagement</p>
-        </div>
-        <div className='grid gap-4 grid-cols-3'>
         
-          <img className='row-span-1 col-span-1 gmbr-10' src='./img/Rectangle 41.png' alt='' />
-        
-        <div>
-          <img className='row-span-1 col-span-1 gmbr-11' src='./img/Rectangle 39.png' alt='' />
-        </div>
-        <div>
-          <img className='row-span-1 col-span-1 gmbr-12' src='./img/Rectangle 40.png' alt='' />
-        </div>
-        </div>
-        <div className='box-1'>
-          <div>
-            <p className='styletxt-3'>Ready to try DesignXX?</p>
-          </div>
-          <div>
-            <p className='styletxtt-4'>Create your project today and get your design tomorrow. It's that simple. Try design today 30-day risk-free</p>
-          </div>
-          <button className='box-2'><p className='styletxt-5'>BOOK A DEMO</p></button>
-        </div>
-    </div>
+
   )
 }
 
-export default portofolio
+export default Portfolio
