@@ -1,40 +1,41 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../Demo.css';
 
 function Demo() {
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const StepTwo = () => {
         navigate('/StepTwo');
     };
   return (
-    <div className='container'>
-      <div className='container-demo'>
-        <p className='txt-demo'>Book a call with us</p>
-        <p className='txt-demo1'>Fill out the form to schedule a consultation with a DesignXX expert</p>
-      <div class="mb-4">
-      <label class="txt-form-email block text-gray-700 text-sm font-bold mb-2" for="email">
-        Email
-      </label>
-      <input class="form-email shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Sudah Ditulis"/>
-    </div>
-    <div class="mb-6">
-      <label class="txt-form-email block text-gray-700 text-sm font-bold mb-2" for="company">
-        Company
-      </label>
-      <input class="form-email shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="company" type="text" placeholder="Sudah Ditulis"/>
-      <p className='txt-clicking'>By clicking next, you agree to receive communications from DesignXX in accordance with our <b>Privacy Policy</b></p>
-    </div>
-    <div className="frame-btn-demo">
-          <div className='btn-video-demo'>
-            <button className='btn-video'>Video Demo</button>
+    <div className="md:px-80 py-20 flex flex-col gap-20 lg:gap-40">
+        <div className="flex flex-col w-full gap-8 text-[#414141]">
+          <h1 className="font-bold text-3xl lg:text-6xl lg:leading-[4.5rem] text-center lg:text-left">
+            <span className="font-normal"></span> Book a call with us!
+          </h1>
+          <p className='text-center lg:text-left'>
+            Fill out the form to schedule a consultation with a DesignXX expert
+          </p>
+          <form className='flex flex-col px-10 md:px-0'>
+            <label className='block'>
+                <span className='flex flex-row font-normal pb-6 text-2xl font-[Poppins] text-[#414141] md:text-center'>Email</span>
+                <input className='border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' placeholder='Sudah Ditulis' />
+            </label>
+            <label className='block'>
+                <span className='flex flex-row font-normal pt-8 pb-6 text-2xl font-[Poppins] text-[#414141]'>Company</span>
+                <input className='border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' placeholder='Sudah Ditulis' />
+            </label>
+          </form>
+          <div className='font-normal'>
+            <p className='text-xs text-center lg:text-left font-normal text-[#414141] font-[Poppins]'>By clicking next, you agree to receive communications from DesignXX in accordance with our <b>Privacy Policy.</b></p>
           </div>
-          <div className='btn-book'>
-            <button onClick={StepTwo} className='btn-call'>Book A Call</button>
-          </div>
-    </div>
-    </div>
+          <div className='flex flex-col gap-6'>
+            <div className='flex flex-row gap-2 md:gap-6 md:grid-flow-col'>
+            <button className='rounded border w-80 h-14 bg-[#FFFFFF] text-[#E9520B] border-[#E9520B] text-2xl'>VIDEO DEMO</button>
+            <button onClick={StepTwo} className='rounded border w-80 h-14 bg-[#E9520B] text-[#FFFFFF] border-[#E9520B] text-2xl'>BOOK A CALL</button>
+            </div>
+        </div>
+        </div>
     </div>
   )
 }

@@ -1,84 +1,52 @@
-import React, { useState } from 'react';
-import '../StepThree.css';
-import CalendarPopup from './CalendarPopup';
+import React from 'react';
 import {useNavigate} from 'react-router-dom';
 
+
 function StepThree() {
+
     const navigate = useNavigate();
 
     const StepTwo = () => {
         navigate('/StepTwo');
     };
-
-    const [showMyModal, setShowMyModal] = useState(false);
-
-    const handleOnClose = () => setShowMyModal(false)
   return (
-    <div className='container'>
-        <div className='frame-step-three'>
-            <div className='frame-nomor-step-2'>
-                <div className='btn-step-2-1'>
-                    <p className='txt-btn-step-2-1'>1</p>
-                </div>
-                    <p className='line-step-2-1'></p>
-                <div className='btn-step-2-2'>
-                    <p className='txt-btn-step-2-2'>2</p>
-                </div>
-                    <p className='line-step-2-2'></p>
-                <div className='btn-step-2-3'>
-                    <p className='txt-btn-step-2-3'>3</p>
-                </div>
-            </div>
-            <div>
-                <p className='txt-what-create'>Tell us about your company</p>
-                <p className='txt-what-consult'>Fill out the form to schedule a consultation with a DesignXX expert</p>
-            </div>
-            <div class="mb-4">
-                <label class="txt-form-email block text-gray-700 text-sm font-bold mb-2" for="nama">
-                    Nama Lengkap
-                </label>
-                <input class="form-email shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Tulis Disini"/>
-            </div>
-            <div class="mb-6 relative w-100">
-                <label class="txt-form-email block text-gray-700 text-sm font-bold mb-2" for="title">
-                    Title
-                </label>
-                <select class="form-email shadow appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-3 py-2 rounded leading-tight focus:outline-none focus:shadow-outline">
+    <div className="md:px-80 py-20 flex flex-col gap-20 lg:gap-40">
+        <div className="flex flex-col w-full gap-8 text-[#414141]">
+          <h1 className="font-bold text-3xl lg:text-3xl lg:leading-[4.5rem] text-center lg:text-left">
+            <span className="font-normal"></span> Tell us about your company
+          </h1>
+          <p className='text-center lg:text-sm lg:text-left'>
+            Fill out the form to schedule a consultation with a DesignXX expert
+          </p>
+          <form>
+            <label className='block'>
+                <span className='flex flex-row font-normal pb-6 text-lg font-[Poppins] text-[#414141]'>Nama Lengkap</span>
+                <input className='border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' placeholder='Sudah Ditulis' />
+            </label>
+            <label className='block'>
+                <span className='flex flex-row font-normal pt-8 pb-6 text-lg font-[Poppins] text-[#414141]'>Title</span>
+                <select class="border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans">
                 <option>Pilih Disini</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
             </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-            </div>
-            </div>
-            <div class="mb-6 relative w-100">
-                <label class="txt-form-email block text-gray-700 text-sm font-bold mb-2" for="industry">
-                    Industry
-                </label>
-                <select class="form-email shadow appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-3 py-2 rounded leading-tight focus:outline-none focus:shadow-outline">
+            </label>
+            <label className='block'>
+                <span className='flex flex-row font-normal pt-8 pb-6 text-lg font-[Poppins] text-[#414141]'>Industry</span>
+                <select class="border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans">
                 <option>Pilih Disini</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
             </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-            </div>
-            </div>
-            <div className='frame-btn-step'>
-                <div className='frame-btn-previous'>
-                    <button onClick={StepTwo} className='btn-previous'>
-                        Previous
-                    </button>
-                </div>
-                <div className='frame-btn-next-step'>
-                    <button onClick={() => setShowMyModal(true)} className='btn-next-step' >
-                        Next
-                    </button>
-                </div>
+            </label>
+          </form>
+          <div className='flex flex-col gap-6'>
+            <div className='flex flex-row gap-6 md:grid-flow-col '>
+            <button onClick={StepTwo} className='rounded border w-52 h-14 bg-[#FFFFFF] text-[#E9520B] border-[#E9520B] text-2xl'>PREVIOUS</button>
+            <button className='rounded border w-52 h-14 bg-[#E9520B] text-[#FFFFFF] border-[#E9520B] text-2xl'>NEXT</button>
             </div>
         </div>
-        <CalendarPopup visible={showMyModal}/>
+        </div>
     </div>
   )
 }
