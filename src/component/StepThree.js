@@ -17,7 +17,7 @@ function StepThree() {
 
     const handleOnClose = () => setShowMyModal(false)
   return (
-    <div className="md:px-80 py-20 flex flex-col gap-10 lg:gap-10">
+    <div className="md:px-96 py-20 flex flex-col gap-10 lg:gap-10">
       <div className='flex flex-row'>
         <div className='rounded-full border border-[#E9520B] w-[50px] h-[50px]'>
           <p className='py-2 text-center text-2xl text-[#E9520B] font-[dm-sans]'>1</p>

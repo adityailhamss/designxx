@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 import "@fontsource/poppins";
 import "@fontsource/dm-sans";
 import "@fontsource/open-sans";
@@ -35,40 +36,42 @@ function CalendarPopup({visible, onClose}) {
             </div>
             <div className='flex flex-col w-[530px] justify-center lg:justify-items-start'>
               <p className='text-2xl pl-8 pt-8 lg:pt-24 pb-12 font-[Poppins]'>Select a Date & Time</p>
-              <div className='flex flex-row border w-[530px] h-[267px] justify-center'>
-                  <div className='flex flex-row pl-3 border w-[328px] h-[267px] items-center justify-center'>
+              <div className='flex flex-row border-none w-[530px] h-[267px] justify-center'>
+                  <div className='flex flex-row border-none w-[328px] h-[267px] items-center justify-center'>
                   <Calendar onChange={onChange} value={value} />
+                  <div className='flex flex-row border border-[#DADADA] w-[0px] h-[267px] my-6'>
+        </div>
                   </div>
                   <div className='flex flex-col px-8 overflow-auto gap-2'>
-                      <div className='pt-4'>
-                          <p className='font-[opens-sans] text-[#444444] text-xs text-center'>Pick Time</p>
+                      <div className='pt-2'>
+                          <p className='font-[Opens_Sans] font-normal text-[#444444] text-xs text-center'>Pick Time</p>
                       </div>
                       <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
-                          <p className='text-center pt-2 pb-2 text-[#E9520B] text-xs'>08:00</p>
+                          <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>08:00</p>
                       </div>
                       <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
-                          <p className='text-center pt-2 pb-2 text-[#E9520B] text-xs'>09:00</p>
+                          <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>09:00</p>
                       </div>
                       <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
-                          <p className='text-center pt-2 pb-2 text-[#E9520B] text-xs'>10:00</p>
+                          <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>10:00</p>
                       </div>
                       <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
-                          <p className='text-center pt-2 pb-2 text-[#E9520B] text-xs'>11:00</p>
+                          <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>11:00</p>
                       </div>
                       <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
-                          <p className='text-center pt-2 pb-2 text-[#E9520B] text-xs'>12:00</p>
+                          <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>12:00</p>
                       </div>
                       <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
-                          <p className='text-center pt-2 pb-2 text-[#E9520B] text-xs'>13:00</p>
+                          <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>13:00</p>
                       </div>
                       <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
-                          <p className='text-center pt-2 pb-2 text-[#E9520B] text-xs'>14:00</p>
+                          <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>14:00</p>
                       </div>
                       <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
-                          <p className='text-center pt-2 pb-2 text-[#E9520B] text-xs'>15:00</p>
+                          <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>15:00</p>
                       </div>
                       <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
-                          <p className='text-center pt-2 pb-2 text-[#E9520B] text-xs'>16:00</p>
+                          <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>16:00</p>
                       </div>
                   </div>
               </div>
