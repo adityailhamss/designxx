@@ -12,6 +12,8 @@ import HowItWork from "./component/HowItWork";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import Teslanding from "./component/teslanding";
+import Paket from "./component/Paket";
+import Order from "./component/Order";
 
 function App() {
   const [showMyModal, setShowMyModal] = useState(false);
@@ -28,6 +30,8 @@ function App() {
     </Routes>
     <Footer />
   </Router>
+
+  
   );
 }
 

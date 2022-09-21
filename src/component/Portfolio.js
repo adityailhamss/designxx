@@ -11,7 +11,7 @@ function Portfolio() {
     };
 
   return (
-    <div className='px-36 py-20 flex-row'>
+    <div className='px-5 lg:px-36 py-20 flex-row'>
         <div className='flex flex-col w-full gap-8 text-[#414141]'>
             <h1 className="font-bold text-3xl lg:text-6xl lg:leading-[4.5rem] text-center lg:text-left">Explore Our Projects</h1>
             <p className="text-center lg:text-left">
