@@ -34,7 +34,7 @@ function CalendarPopup({visible, onClose}) {
             </div>
             </div>
             <div className='flex flex-col w-[530px] justify-center lg:justify-items-start'>
-              <p className='text-2xl pl-8 pt-24 pb-12 font-[Poppins]'>Select a Date & Time</p>
+              <p className='text-2xl pl-8 pt-8 lg:pt-24 pb-12 font-[Poppins]'>Select a Date & Time</p>
               <div className='flex flex-row border w-[530px] h-[267px] justify-center'>
                   <div className='flex flex-row pl-3 border w-[328px] h-[267px] items-center justify-center'>
                   <Calendar onChange={onChange} value={value} />
@@ -72,7 +72,7 @@ function CalendarPopup({visible, onClose}) {
                       </div>
                   </div>
               </div>
-              <div className='flex flex-row justify-center lg:justify-end pt-24 pr-4 pb-4'>
+              <div className='flex flex-row justify-center lg:justify-end pt-8 lg:pt-24 pr-4 pb-4'>
                 <div className='flex flex-row gap-3 '>
                   <button className='border w-[120px] h-[34px] bg-[#FFFFFF] text-[#E9520B] border-[#E9520B] text-xs'>Cancel</button>
                   <button className='border w-[120px] h-[34px] bg-[#C4C4C4] text-[#FFFFFF] text-xs'>Next</button>
