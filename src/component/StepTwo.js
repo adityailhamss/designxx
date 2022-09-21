@@ -25,12 +25,12 @@ function StepTwo() {
         <div className='rounded-full border border-[#E9520B] w-[50px] h-[50px]'>
           <p className='py-2 text-center text-2xl text-[#E9520B] font-[dm-sans]'>1</p>
         </div>
-        <div className='border w-[200px] h-[0px] my-6'>
+        <div className='border border-[#DADADA] w-[200px] h-0 my-6'>
         </div>
         <div className='rounded-full border border-[#E9520B] bg-[#E9520B] w-[50px] h-[50px]'>
           <p className='py-2 text-center text-2xl text-[#FFFFFF] font-[dm-sans]'>2</p>
         </div>
-        <div className='border w-[200px] h-[0px] my-6'>
+        <div className='border border-[#DADADA] w-[200px] h-0 my-6'>
         </div>
         <div className='rounded-full border border-[#C4C4C4] w-[50px] h-[50px]'>
           <p className='py-2 text-center text-2xl text-[#C4C4C4] font-[dm-sans]'>3</p>
@@ -45,7 +45,7 @@ function StepTwo() {
           </p>
           <div className='flex flex-col gap-6'>
             <div className='flex flex-col gap-6 md:grid-flow-col text-[#C4C4C4] lg:items-left'>
-            <button onCLick={handleClick} className={`rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl ${(changeColor === true)? `bg-gray-77` : `bg-orange-500`}`}>Social Media Manajemen</button>
+            <button onCLick={handleClick} className={`rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl ${(changeColor === false)? `bg-gray-77` : `bg-orange-500`}`}>Social Media Manajemen</button>
             <button className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'>Digital ads & Marketing</button>
             <button className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'>Motion Graphic</button>
             <button className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'>Presentation & Powerpoint</button>

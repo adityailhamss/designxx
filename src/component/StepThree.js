@@ -22,12 +22,12 @@ function StepThree() {
         <div className='rounded-full border border-[#E9520B] w-[50px] h-[50px]'>
           <p className='py-2 text-center text-2xl text-[#E9520B] font-[dm-sans]'>1</p>
         </div>
-        <div className='border w-[200px] h-[0px] my-6'>
+        <div className='border border-[#DADADA] w-[200px] h-0 my-6'>
         </div>
         <div className='rounded-full border border-[#E9520B] w-[50px] h-[50px]'>
           <p className='py-2 text-center text-2xl text-[#E9520B] font-[dm-sans]'>2</p>
         </div>
-        <div className='border w-[200px] h-[0px] my-6'>
+        <div className='border border-[#DADADA] w-[200px] h-0 my-6'>
         </div>
         <div className='rounded-full border border-[#E9520B] bg-[#E9520B] w-[50px] h-[50px]'>
           <p className='py-2 text-center text-2xl text-[#FFFFFF] font-[dm-sans]'>3</p>
@@ -43,7 +43,7 @@ function StepThree() {
           <form className='md:px-0 px-10'>
             <label className='block'>
                 <span className='flex flex-row font-bold pb-6 text-lg font-[Poppins] text-[#414141]'>Nama Lengkap</span>
-                <input className='border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' placeholder='Sudah Ditulis' />
+                <input className='border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' placeholder='Tulis Disini' />
             </label>
             <label className='block'>
                 <span className='flex flex-row font-bold pt-8 pb-6 text-lg font-[Poppins] text-[#414141]'>Title</span>
