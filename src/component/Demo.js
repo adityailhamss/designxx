@@ -1,4 +1,6 @@
 import React from 'react';
+import "@fontsource/poppins";
+import "@fontsource/dm-sans";
 import { useNavigate } from 'react-router-dom';
 
 function Demo() {
@@ -16,9 +18,10 @@ function Demo() {
           <p className='text-center lg:text-left'>
             Fill out the form to schedule a consultation with a DesignXX expert
           </p>
+          <div className='items-center justify-center'>
           <form className='flex flex-col px-10 md:px-0'>
             <label className='block'>
-                <span className='flex flex-row font-normal pb-6 text-2xl font-[Poppins] text-[#414141] md:text-center'>Email</span>
+                <span className='flex flex-row font-normal pb-6 text-2xl font-[Poppins] text-[#414141]'>Email</span>
                 <input className='border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' placeholder='Sudah Ditulis' />
             </label>
             <label className='block'>
@@ -26,13 +29,14 @@ function Demo() {
                 <input className='border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' placeholder='Sudah Ditulis' />
             </label>
           </form>
+          </div>
           <div className='font-normal'>
             <p className='text-xs text-center lg:text-left font-normal text-[#414141] font-[Poppins]'>By clicking next, you agree to receive communications from DesignXX in accordance with our <b>Privacy Policy.</b></p>
           </div>
           <div className='flex flex-col gap-6'>
             <div className='flex flex-row gap-2 md:gap-6 md:grid-flow-col'>
-            <button className='rounded border w-80 h-14 bg-[#FFFFFF] text-[#E9520B] border-[#E9520B] text-2xl'>VIDEO DEMO</button>
-            <button onClick={StepTwo} className='rounded border w-80 h-14 bg-[#E9520B] text-[#FFFFFF] border-[#E9520B] text-2xl'>BOOK A CALL</button>
+            <button className='rounded border w-60 h-10 md:w-80 md:h-14 bg-[#FFFFFF] text-[#E9520B] border-[#E9520B] text-2xl'>VIDEO DEMO</button>
+            <button onClick={StepTwo} className='rounded border w-60 h-10 md:w-80 md:h-14 bg-[#E9520B] text-[#FFFFFF] border-[#E9520B] text-2xl'>BOOK A CALL</button>
             </div>
         </div>
         </div>

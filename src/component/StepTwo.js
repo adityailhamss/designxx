@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import "@fontsource/poppins";
+import "@fontsource/dm-sans";
 
 function StepTwo() {
     const [changeColor, setChangeColor] = useState(false)
@@ -18,7 +20,22 @@ function StepTwo() {
         navigate('/StepThree');
     };
   return (
-    <div className="md:px-80 py-20 flex flex-col gap-20 lg:gap-40">
+    <div className="md:px-80 py-20 flex flex-col gap-10 lg:gap-10">
+      <div className='flex flex-row'>
+        <div className='rounded-full border border-[#E9520B] w-[50px] h-[50px]'>
+          <p className='py-2 text-center text-2xl text-[#E9520B] font-[dm-sans]'>1</p>
+        </div>
+        <div className='border w-[200px] h-[0px] my-6'>
+        </div>
+        <div className='rounded-full border border-[#E9520B] bg-[#E9520B] w-[50px] h-[50px]'>
+          <p className='py-2 text-center text-2xl text-[#FFFFFF] font-[dm-sans]'>2</p>
+        </div>
+        <div className='border w-[200px] h-[0px] my-6'>
+        </div>
+        <div className='rounded-full border border-[#C4C4C4] w-[50px] h-[50px]'>
+          <p className='py-2 text-center text-2xl text-[#C4C4C4] font-[dm-sans]'>3</p>
+        </div>
+      </div>
         <div className="flex flex-col w-full gap-8 text-[#414141]">
           <h1 className="font-bold text-2xl lg:text-3xl lg:leading-[4.5rem] text-center lg:text-left">
             <span className="font-normal"></span> What do you want to create
