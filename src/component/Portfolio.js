@@ -36,7 +36,7 @@ function Portfolio() {
                     <img src='./img/Rectangle 33.png' />
                 </div>
             </div>
-            <div className='pt-6 grid grid-row-2 lg:grid-flow-col gap-6'>
+            <div className='pt-6 grid grid-row-2 lg:grid-flow-col gap-6 justify-center lg:justify-start'>
                 <div class="row-span-2 col-span-2 lg:w-[252px] lg:h-[160px] rounded-lg">
                     <img src='./img/Rectangle 34.png' />
                 </div>
@@ -52,13 +52,13 @@ function Portfolio() {
                 </div>
                 </div>
         </div>
-        <div className='py-6 flex flex-col w-full gap-8 text-[#414141] items-center'>
+        <div className='py-6 flex flex-col w-full gap-8 text-[#414141] justify-center'>
             <h1 className="font-bold text-3xl lg:text-6xl lg:leading-[4.5rem] text-center lg:text-left">Unlock your inner creator</h1>
             <p className="text-center lg:text-left lg:w-[734px]">
             Get the inspiration you need with these collections carefully selected to boost your project's engagement
             </p>
         </div>
-        <div className='pt-6 grid lg:grid-flow-col gap-6 lg:w-[1000px]'>
+        <div className='pt-6 grid lg:grid-flow-col gap-6 lg:w-[1000px] justify-center lg:justify-start'>
             <div class="row-span-3 col-span-3 lg:w-[338px] lg:h-[235px] rounded-lg">
                 <img src='./img/Rectangle 41.png' />
             </div>
