@@ -6,6 +6,7 @@ import "@fontsource/dm-sans";
 import "@fontsource/open-sans";
 
 function CalendarPopup({visible, onClose}) {
+    
   const [value, onChange] = useState(new Date());
     if (!visible) return null
   return (
@@ -46,39 +47,39 @@ function CalendarPopup({visible, onClose}) {
                       <div className='pt-2'>
                           <p className='font-[Opens_Sans] font-normal text-[#444444] text-xs text-center'>Pick Time</p>
                       </div>
-                      <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
+                      <button className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
                           <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>08:00</p>
-                      </div>
-                      <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
+                      </button>
+                      <button className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
                           <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>09:00</p>
-                      </div>
-                      <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
+                      </button>
+                      <button className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
                           <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>10:00</p>
-                      </div>
-                      <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
+                      </button>
+                      <button className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
                           <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>11:00</p>
-                      </div>
-                      <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
+                      </button>
+                      <button className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
                           <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>12:00</p>
-                      </div>
-                      <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
+                      </button>
+                      <button className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
                           <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>13:00</p>
-                      </div>
-                      <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
+                      </button>
+                      <button className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
                           <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>14:00</p>
-                      </div>
-                      <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
+                      </button>
+                      <button className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
                           <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>15:00</p>
-                      </div>
-                      <div className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
+                      </button>
+                      <button className='border border-[#E9520B] w-[120px] h-[34px] px-10 items-center'>
                           <p className='font-[Opens_Sans] text-center pt-2 pb-2 text-[#E9520B] text-xs'>16:00</p>
-                      </div>
+                      </button>
                   </div>
               </div>
               <div className='flex flex-row justify-center lg:justify-end pt-8 lg:pt-24 pr-4 pb-4'>
                 <div className='flex flex-row gap-3 '>
-                  <button className='border w-[120px] h-[34px] bg-[#FFFFFF] text-[#E9520B] border-[#E9520B] text-xs'>Cancel</button>
-                  <button className='border w-[120px] h-[34px] bg-[#C4C4C4] text-[#FFFFFF] text-xs'>Next</button>
+                  <button onClick={onClose} className='border w-[120px] h-[34px] bg-[#FFFFFF] text-[#E9520B] border-[#E9520B] text-xs'>Cancel</button>
+                  <button onClick={onClose} className='border w-[120px] h-[34px] bg-[#C4C4C4] text-[#FFFFFF] text-xs'>Next</button>
                 </div>
                 </div>
             </div>

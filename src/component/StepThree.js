@@ -6,7 +6,7 @@ import "@fontsource/dm-sans";
 
 
 function StepThree() {
-
+  
     const navigate = useNavigate();
 
     const StepTwo = () => {
@@ -69,7 +69,7 @@ function StepThree() {
             </div>
         </div>
         </div>
-        <CalendarPopup visible={showMyModal}/>
+        <CalendarPopup onClose={handleOnClose} visible={showMyModal}/>
     </div>
   )
 }

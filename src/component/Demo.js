@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "@fontsource/poppins";
 import "@fontsource/dm-sans";
 import { useNavigate } from 'react-router-dom';
 
 function Demo() {
+    const initialValues = { email: "", company: "" };
+    const {formValues, setFormValues} = useState(initialValues);
+
+    const handleChange = (e) => {
+      const {name, value} = e.target;
+      setFormValues({ ...formValues, [name] : value });
+    };
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+    };
+
     const navigate = useNavigate();
 
     const StepTwo = () => {
@@ -19,14 +31,25 @@ function Demo() {
             Fill out the form to schedule a consultation with a DesignXX expert
           </p>
           <div className='items-center justify-center'>
-          <form className='flex flex-col px-10 md:px-0'>
-            <label className='block'>
+          
+          <form  className='flex flex-col px-10 md:px-0'>
+            <label className='flex flex-col'>
                 <span className='flex flex-row font-normal pb-6 text-2xl font-[Poppins] text-[#414141]'>Email</span>
-                <input className='border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' placeholder='Sudah Ditulis' />
+                <input className='border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' 
+                type="text"
+                placeholder='Sudah Ditulis' 
+                name="email"
+                onChange={handleChange}
+                />
             </label>
-            <label className='block'>
-                <span className='flex flex-row font-normal pt-8 pb-6 text-2xl font-[Poppins] text-[#414141]'>Company</span>
-                <input className='border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' placeholder='Sudah Ditulis' />
+            <label className='flex flex-col'>
+                <span className='font-normal flex flex-row pt-8 pb-6 text-2xl font-[Poppins] text-[#414141]'>Company</span>
+                <input className='flex-shrink flex-grow flex-auto border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' 
+                type="text"
+                placeholder='Sudah Ditulis' 
+                name="company" 
+                onChange={handleChange}
+                />
             </label>
           </form>
           </div>

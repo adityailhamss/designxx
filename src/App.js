@@ -16,7 +16,6 @@ import Paket from "./component/Paket";
 import Order from "./component/Order";
 
 function App() {
-  const [showMyModal, setShowMyModal] = useState(false);
   return (
     <Router>
     <Navbar />

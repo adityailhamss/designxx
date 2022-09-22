@@ -1,15 +1,31 @@
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import { Nav } from "react-router-dom";
 import "@fontsource/poppins";
 import "@fontsource/dm-sans";
 
-function StepTwo() {
-    const [changeColor, setChangeColor] = useState(false)
+
+
+const StepTwo = () => {
+ 
+  const handleClick = event => {
+    // 👇️ toggle styles on click
+    if (event.currentTarget.style.backgroundColor) {
+      event.currentTarget.style.backgroundColor = null;
+      event.currentTarget.style.color = null;
+    } else {
+      event.currentTarget.style.backgroundColor = '#E9520B';
+      event.currentTarget.style.color = 'white';
+    }
+
+    // 👇️ toggle class on click
+    event.currentTarget.classList.toggle('my-class-1', 'my-class-2');
+  };
+
+    const [changeColor, setChangeColor] = useState(false);
 
     //function for changeColor
-    const handleClick = () => {
-        setChangeColor(!changeColor)
-    };
+    
     const navigate = useNavigate();
 
     const Demo = () => {
@@ -44,21 +60,55 @@ function StepTwo() {
             Fill out the form to schedule a consultation with a DesignXX expert
           </p>
           <div className='flex flex-col gap-6'>
-            <div className='flex flex-col gap-6 md:grid-flow-col text-[#C4C4C4] lg:items-left'>
-            <button onCLick={handleClick} className={`rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl ${(changeColor === false)? `bg-gray-77` : `bg-orange-500`}`}>Social Media Manajemen</button>
-            <button className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'>Digital ads & Marketing</button>
-            <button className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'>Motion Graphic</button>
-            <button className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'>Presentation & Powerpoint</button>
-            <button className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'>Logo & Branding</button>
-            <button className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'>Ilustrations</button>
-            <button className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'>Print & Merchandise</button>
-            <button className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'>Other</button>
+            <div className='flex flex-col gap-6 md:grid-flow-col text-[#C4C4C4] lg:items-start items-center bg-[#FFFFFF]'>
+            <div className='block'>
+            <button 
+                    onClick={handleClick}
+                    className="rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl" 
+                    >Social Media Manajemen
+            </button>
+            </div>
+            <button 
+                    onClick={handleClick}
+                    className="rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl" 
+                    >Digital Ads & Marketing
+            </button>
+            <button 
+                    onClick={handleClick} 
+                    className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'
+                    >Motion Graphic
+            </button>
+            <button 
+                    onClick={handleClick} 
+                    className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'
+                    >Presentation & Powerpoint
+            </button>
+            <button 
+                    onClick={handleClick} 
+                    className='rounded border w-80 h-14 border-[#C4C4C4] text-2xl'
+                    >Logo & Branding
+            </button>
+            <button 
+                    onClick={handleClick} 
+                    className='rounded border w-80 h-14 border-[#C4C4C4] text-2xl'
+                    >Ilustrations
+            </button>
+            <button 
+                    onClick={handleClick} 
+                    className='rounded border w-80 h-14 border-[#C4C4C4] text-2xl'
+                    >Print & Merchandise
+            </button>
+            <button 
+                    onClick={handleClick} 
+                    className='rounded border w-80 h-14 bg-[#FFFFFF] border-[#C4C4C4] text-2xl'
+                    >Other
+            </button>
             </div>
         </div>
         <div className='flex flex-col'>
             <div className='flex flex-row gap-2 lg:gap-6 md:grid-flow-col '>
-            <button onClick={Demo} className='rounded border w-52 h-14 bg-[#FFFFFF] text-[#E9520B] border-[#E9520B] text-2xl'>PREVIOUS</button>
-            <button onClick={StepThree} className='rounded border w-52 h-14 bg-[#E9520B] text-[#FFFFFF] border-[#E9520B] text-2xl'>NEXT</button>
+            <button onClick={Demo} className='rounded border w-40 h-10 md:w-52 md:h-14 bg-[#FFFFFF] text-[#E9520B] border-[#E9520B] text-2xl'>PREVIOUS</button>
+            <button onClick={StepThree} className='rounded border w-40 h-10 md:w-52 md:h-14 bg-[#E9520B] text-[#FFFFFF] border-[#E9520B] text-2xl'>NEXT</button>
             </div>
         </div>
         </div>
