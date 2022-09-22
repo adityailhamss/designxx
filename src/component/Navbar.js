@@ -24,6 +24,7 @@ const Navbar = () => {
               style={(isActive) => ({
                 color: isActive.isActive ? "#E9520B" : "#C4C4C4",
               })}
+              end
             >
               HOME
             </NavLink>
@@ -74,6 +75,7 @@ const Navbar = () => {
                   style={(isActive) => ({
                     color: isActive.isActive ? "#E9520B" : "#C4C4C4",
                   })}
+                  end
                 >
                   HOME
                 </NavLink>
