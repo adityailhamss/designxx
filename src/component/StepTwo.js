@@ -32,7 +32,7 @@ const StepTwo = () => {
     };
   return (
     <div className="md:px-80 py-20 flex flex-col gap-10 lg:gap-10">
-      <div className='flex flex-row'>
+      <div className='flex flex-row justify-center md:justify-start'>
         <div className='rounded-full border border-[#E9520B] w-[50px] h-[50px]'>
           <p className='py-2 text-center text-2xl text-[#E9520B] font-[dm-sans]'>1</p>
         </div>
@@ -101,7 +101,7 @@ const StepTwo = () => {
             </div>
         </div>
         <div className='flex flex-col'>
-            <div className='flex flex-row gap-2 lg:gap-6 md:grid-flow-col '>
+            <div className='flex flex-row gap-4 lg:gap-6 justify-center md:justify-start '>
             <button onClick={Demo} className='rounded border w-40 h-10 md:w-52 md:h-14 bg-[#FFFFFF] text-[#E9520B] border-[#E9520B] text-2xl'>PREVIOUS</button>
             <button onClick={StepThree} className='rounded border w-40 h-10 md:w-52 md:h-14 bg-[#E9520B] text-[#FFFFFF] border-[#E9520B] text-2xl'>NEXT</button>
             </div>

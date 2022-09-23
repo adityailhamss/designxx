@@ -18,7 +18,7 @@ function StepThree() {
     const handleOnClose = () => setShowMyModal(false)
   return (
     <div className="md:px-96 py-20 flex flex-col gap-10 lg:gap-10">
-      <div className='flex flex-row'>
+      <div className='flex flex-row justify-center md:justify-start'>
         <div className='rounded-full border border-[#E9520B] w-[50px] h-[50px]'>
           <p className='py-2 text-center text-2xl text-[#E9520B] font-[dm-sans]'>1</p>
         </div>
@@ -43,11 +43,11 @@ function StepThree() {
           <form className='md:px-0 px-10'>
             <label className='block'>
                 <span className='flex flex-row font-bold pb-6 text-lg font-[Poppins] text-[#414141]'>Nama Lengkap</span>
-                <input className='border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' placeholder='Tulis Disini' />
+                <input className='border w-full lg:w-[678] h-14 rounded border-[#DADADA] pl-3 font-sans' placeholder='Tulis Disini' />
             </label>
             <label className='block'>
                 <span className='flex flex-row font-bold pt-8 pb-6 text-lg font-[Poppins] text-[#414141]'>Title</span>
-                <select class="border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans">
+                <select class="border w-full lg:w-[678] h-14 rounded border-[#DADADA] pl-3 font-sans">
                 <option>Pilih Disini</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
@@ -55,7 +55,7 @@ function StepThree() {
             </label>
             <label className='block'>
                 <span className='flex flex-row font-bold pt-8 pb-6 text-lg font-[Poppins] text-[#414141]'>Industry</span>
-                <select class="border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans">
+                <select class="border w-full lg:w-[678] h-14 rounded border-[#DADADA] pl-3 font-sans">
                 <option>Pilih Disini</option>
                 <option>Option 2</option>
                 <option>Option 3</option>

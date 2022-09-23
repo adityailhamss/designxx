@@ -38,7 +38,7 @@ function Demo() {
           <form  className='flex flex-col px-10 md:px-0'>
             <label className='flex flex-col'>
                 <span className='flex flex-row font-normal pb-6 text-2xl font-[Poppins] text-[#414141]'>Email</span>
-                <input className='border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' 
+                <input className='border w-full lg:w-[678] h-14 rounded border-[#DADADA] pl-3 font-sans' 
                 type="text"
                 placeholder='Sudah Ditulis' 
                 name="email"
@@ -48,7 +48,7 @@ function Demo() {
             </label>
             <label className='flex flex-col'>
                 <span className='font-normal flex flex-row pt-8 pb-6 text-2xl font-[Poppins] text-[#414141]'>Company</span>
-                <input className='flex-shrink flex-grow flex-auto border w-4/5 h-14 rounded border-[#DADADA] pl-3 font-sans' 
+                <input className='flex-shrink flex-grow flex-auto border w-full lg:w-[678] h-14 rounded border-[#DADADA] pl-3 font-sans' 
                 type="text"
                 placeholder='Sudah Ditulis' 
                 name="company" 
