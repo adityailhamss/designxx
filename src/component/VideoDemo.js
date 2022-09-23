@@ -1,16 +1,34 @@
-import React from 'react'
+import VideoJS from  '../VideoJS';
+import video from '../assets/video.mp4';
+import iconClose from '../assets/onClose.png';
+import { useNavigate } from 'react-router-dom';
 
-function VideoDemo() {
-  return (
-    <div className='container '>
-        <div class='relative flex items-center justify-center h-screen mb-12 overflow-hidden'>
-    <img 
-      src="assets/img/video.png"
-      type="video/mp4"
-    />
-  </div>
-</div>
-  )
+const VideoDemo = () => {
+    const navigate = useNavigate();
+    const Demo = () => {
+      navigate('/Demo');
+  };
+    const videoJsOptions = {
+        autoplay : false,
+        controls : true,
+        sources : [{
+            src : video,
+            type : 'video/mp4'
+        }]
+    }
+
+    return (
+        <div className="bg-gray-300 flex flex-col justify-items-end">
+            <div className='flex flex-row justify-center lg:justify-end px-36 pt-10'>
+                <button onClick={Demo}>
+                    <img src={iconClose}></img>
+                </button>
+            </div>
+        <div className='px-20 py-10 flex justify-center'>
+            <VideoJS options = {videoJsOptions}/>
+        </div>
+        </div>
+    )  
 }
 
-export default VideoDemo
+export default VideoDemo;

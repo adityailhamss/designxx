@@ -9,11 +9,20 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@videojs/themes": "^1.0.1",
+    "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-calendar": "^3.8.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
+    "react-player": "^2.11.0",
+    "react-prism": "^4.3.2",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "react-whatsapp": "^0.3.0",
+    "slick-carousel": "^1.8.1",
+    "video-react": "^0.15.0",
+    "videojs-react-enhanced": "^0.3.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -42,6 +51,7 @@
   },
   "devDependencies": {
     "react-router-dom": "^6.4.1",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.1.8",
+    "video.js": "^7.20.3"
   }
 }

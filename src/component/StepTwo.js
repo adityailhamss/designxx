@@ -21,11 +21,6 @@ const StepTwo = () => {
     // 👇️ toggle class on click
     event.currentTarget.classList.toggle('my-class-1', 'my-class-2');
   };
-
-    const [changeColor, setChangeColor] = useState(false);
-
-    //function for changeColor
-    
     const navigate = useNavigate();
 
     const Demo = () => {

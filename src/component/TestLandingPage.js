@@ -1,12 +1,25 @@
 import React from 'react';
 import Slider from "react-slick";
-
+import ReactWhatsapp from 'react-whatsapp';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import data from "../data/data";
 
 
 function TestLandingPage() {
+  const handleClick = event => {
+    // 👇️ toggle styles on click
+    if (event.currentTarget.style.backgroundColor) {
+      event.currentTarget.style.backgroundColor = null;
+      event.currentTarget.style.color = null;
+    } else {
+      event.currentTarget.style.backgroundColor = '#E9520B';
+      event.currentTarget.style.color = 'white';
+    }
+
+    // 👇️ toggle class on click
+    event.currentTarget.classList.toggle('my-class-1', 'my-class-2');
+  };
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -254,7 +267,9 @@ function TestLandingPage() {
              </h1>
             <p className='font-[Poppins] font-medium text-lg leading-8 text-white lg:ml-20'>Get the production and quality of an<br/> in-house team without the overhead<br/> cost.</p>
             <div className='flex flex-row w-[264px] h-[54px] lg:ml-20 gap-8 items-center bg-[#FFD966] '>
-           <button className='text-[#444444] uppercase font-[DM Sans] font-normal text-2xl text-center lg:ml-3'> CONTACT US </button>
+            <a href ="https://wa.me/6281355538777">
+           <button className='text-[#444444] uppercase font-[DM Sans] font-normal text-2xl text-center lg:ml-3'>CONTACT US</button>
+           </a>
             <img className=' w-6 h-6 left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#FFD966]' src='assets/img/btn-us.png'/> 
           </div>
           </div>
@@ -277,7 +292,7 @@ function TestLandingPage() {
                 <p className='font-sans font-bold text-[40px] leading-[52px] text-[#455A64]'>Rp.1.500.000</p>
                 <p className='font-sans font-normal text-[18px] leading-[23px] text-[#455A64]'>/ Month</p>
                 </div>
-                <button className='items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center'> PILIH</button> 
+                <button onClick={handleClick} className='items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center'> PILIH</button> 
               <div className='w-[269px] h-[1px] bg-[#D9D9D9]'>
               </div>
               <div className='flex flex-col gap-[21px] w-[251px] h-[182px]'>
@@ -303,7 +318,7 @@ function TestLandingPage() {
                 <p className='font-sans font-bold text-[40px] leading-[52px] text-[#455A64]'>Rp.1.500.000</p>
                 <p className='font-sans font-normal text-[18px] leading-[23px] text-[#455A64]'>/ Month</p>
                 </div>
-                <button className='items-center justify-center border-solid border-[1px] bg-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center'> PILIH</button> 
+                <button onClick={handleClick} className='items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center'> PILIH</button> 
               <div className='w-[269px] h-[1px] bg-[#D9D9D9]'>
               </div>
               <div className='flex flex-col gap-[21px] w-[251px] h-[182px]'>
@@ -329,7 +344,7 @@ function TestLandingPage() {
                 <p className='font-sans font-bold text-[40px] leading-[52px] text-[#455A64]'>Rp.1.500.000</p>
                 <p className='font-sans font-normal text-[18px] leading-[23px] text-[#455A64]'>/ Month</p>
                 </div>
-                <button className='items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center'> PILIH</button> 
+                <button onClick={handleClick} className='items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center'> PILIH</button> 
               <div className='w-[269px] h-[1px] bg-[#D9D9D9]'>
               </div>
               <div className='flex flex-col gap-[21px] w-[251px] h-[182px]'>

@@ -2,21 +2,24 @@ import React, { useState } from 'react';
 import "@fontsource/poppins";
 import "@fontsource/dm-sans";
 import { useNavigate } from 'react-router-dom';
+import { useFormik } from "formik";
+import VideoDemo from './VideoDemo';
 
 function Demo() {
-    const initialValues = { email: "", company: "" };
-    const {formValues, setFormValues} = useState(initialValues);
+  const [showMyModal, setShowMyModal] = useState(false);
 
-    const handleChange = (e) => {
-      const {name, value} = e.target;
-      setFormValues({ ...formValues, [name] : value });
-    };
-
-    const handleSubmit = (e) => {
-      e.preventDefault();
-    };
+    const handleOnClose = () => setShowMyModal(false)
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      company: "",
+    }
+  });
 
     const navigate = useNavigate();
+    const VideoDemo = () => {
+      navigate('/VideoDemo');
+  };
 
     const StepTwo = () => {
         navigate('/StepTwo');
@@ -39,7 +42,8 @@ function Demo() {
                 type="text"
                 placeholder='Sudah Ditulis' 
                 name="email"
-                onChange={handleChange}
+                value={formik.values.email}
+                
                 />
             </label>
             <label className='flex flex-col'>
@@ -48,7 +52,8 @@ function Demo() {
                 type="text"
                 placeholder='Sudah Ditulis' 
                 name="company" 
-                onChange={handleChange}
+                value={formik.values.company}
+                
                 />
             </label>
           </form>
@@ -57,12 +62,13 @@ function Demo() {
             <p className='text-xs text-center lg:text-left font-normal text-[#414141] font-[Poppins]'>By clicking next, you agree to receive communications from DesignXX in accordance with our <b>Privacy Policy.</b></p>
           </div>
           <div className='flex flex-col gap-6'>
-            <div className='flex flex-row gap-2 md:gap-6 md:grid-flow-col'>
-            <button className='rounded border w-60 h-10 md:w-80 md:h-14 bg-[#FFFFFF] text-[#E9520B] border-[#E9520B] text-2xl'>VIDEO DEMO</button>
+            <div className='flex flex-row gap-2 md:gap-6 justify-center md:justify-start'>
+            <button onClick={VideoDemo} className='rounded border w-60 h-10 md:w-80 md:h-14 bg-[#FFFFFF] text-[#E9520B] border-[#E9520B] text-2xl'>VIDEO DEMO</button>
             <button onClick={StepTwo} className='rounded border w-60 h-10 md:w-80 md:h-14 bg-[#E9520B] text-[#FFFFFF] border-[#E9520B] text-2xl'>BOOK A CALL</button>
             </div>
         </div>
         </div>
+        
     </div>
   )
 }
