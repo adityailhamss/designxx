@@ -1,31 +1,18 @@
 import React from 'react';
 import Slider from "react-slick";
-import ReactWhatsapp from 'react-whatsapp';
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import data from "../data/data";
+import data from '/Users/User/designxx/src/data/data'
 
 
 function TestLandingPage() {
-  const handleClick = event => {
-    // 👇️ toggle styles on click
-    if (event.currentTarget.style.backgroundColor) {
-      event.currentTarget.style.backgroundColor = null;
-      event.currentTarget.style.color = null;
-    } else {
-      event.currentTarget.style.backgroundColor = '#E9520B';
-      event.currentTarget.style.color = 'white';
-    }
-
-    // 👇️ toggle class on click
-    event.currentTarget.classList.toggle('my-class-1', 'my-class-2');
-  };
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "orange" }}
+        style={{ ...style, display: "block", background: "ORANGE 500" }}
         onClick={onClick}
       />
     );
@@ -260,20 +247,18 @@ function TestLandingPage() {
               </div>
             </div>
           </div>
-          <div className='flex flex-col lg:flex-row w-full lg:w-[1280px] h-[529px] gap-[67px] bg-[#E9520B]'>
+          <div className='flex flex-row lg:flex-row w-full lg:w-[1280px] h-[529px] gap-[67px] bg-[#E9520B]'>
           <div className='flex flex-col gap-[37.5px] '>
             <h1 className='font-[Poppins] font-semibold lg:text-[60px] text-4xl lg:text-left text-center lg:mt-[80px] lg:ml-20 leading-[72px] text-white'>
             Social Media<br/>Manajemen
              </h1>
             <p className='font-[Poppins] font-medium text-lg leading-8 text-white lg:ml-20'>Get the production and quality of an<br/> in-house team without the overhead<br/> cost.</p>
             <div className='flex flex-row w-[264px] h-[54px] lg:ml-20 gap-8 items-center bg-[#FFD966] '>
-            <a href ="https://wa.me/6281355538777">
-           <button className='text-[#444444] uppercase font-[DM Sans] font-normal text-2xl text-center lg:ml-3'>CONTACT US</button>
-           </a>
+           <button className='text-[#444444] uppercase font-[DM Sans] font-normal text-2xl text-center lg:ml-3'> CONTACT US </button>
             <img className=' w-6 h-6 left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#FFD966]' src='assets/img/btn-us.png'/> 
           </div>
           </div>
-          <div className='flex flex-row'>
+          <div className='flex flex-row lg:flex-row'>
             <img src='assets/img/phone1.png' alt='Iconbtn'></img>
             <div className='flex flex-col gap-[81px]'>
             <img className='w-[235px] h-[439px]' src='assets/adp/hp2.png' alt='Iconbtn'></img>
@@ -292,7 +277,7 @@ function TestLandingPage() {
                 <p className='font-sans font-bold text-[40px] leading-[52px] text-[#455A64]'>Rp.1.500.000</p>
                 <p className='font-sans font-normal text-[18px] leading-[23px] text-[#455A64]'>/ Month</p>
                 </div>
-                <button onClick={handleClick} className='items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center'> PILIH</button> 
+                <button className='items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center'> PILIH</button> 
               <div className='w-[269px] h-[1px] bg-[#D9D9D9]'>
               </div>
               <div className='flex flex-col gap-[21px] w-[251px] h-[182px]'>
@@ -318,7 +303,7 @@ function TestLandingPage() {
                 <p className='font-sans font-bold text-[40px] leading-[52px] text-[#455A64]'>Rp.1.500.000</p>
                 <p className='font-sans font-normal text-[18px] leading-[23px] text-[#455A64]'>/ Month</p>
                 </div>
-                <button onClick={handleClick} className='items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center'> PILIH</button> 
+                <button className='items-center justify-center border-solid border-[1px] bg-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center'> PILIH</button> 
               <div className='w-[269px] h-[1px] bg-[#D9D9D9]'>
               </div>
               <div className='flex flex-col gap-[21px] w-[251px] h-[182px]'>
@@ -344,7 +329,7 @@ function TestLandingPage() {
                 <p className='font-sans font-bold text-[40px] leading-[52px] text-[#455A64]'>Rp.1.500.000</p>
                 <p className='font-sans font-normal text-[18px] leading-[23px] text-[#455A64]'>/ Month</p>
                 </div>
-                <button onClick={handleClick} className='items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center'> PILIH</button> 
+                <button className='items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center'> PILIH</button> 
               <div className='w-[269px] h-[1px] bg-[#D9D9D9]'>
               </div>
               <div className='flex flex-col gap-[21px] w-[251px] h-[182px]'>
@@ -373,12 +358,12 @@ we can design it.</h1>
           <button className='w-[296px] h-[54px] bg-[#E9520B] rounded-[4px] font-sans font-normal text-2xl leading-[54px] text-center uppercase text-white'>COBA SEKARANG</button>
 
           </div>
-          <div className='w-[1000px] gap-[20px] items-center lg:ml-[130px]'>
+          <div className='lg:w-[1000px] gap-[20px] lg:ml-[130px]'>
           <Slider {...settings}>
           {data.map((item) => (
             <div className='flex flex-col gap-1'>
               <p className="text-center">{item.title}</p>
-                <img className="ml-7" src={item.image}
+                <img className="ml-6" src={item.image}
                   alt={item.title}
                   />
             </div>

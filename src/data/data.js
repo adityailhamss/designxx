@@ -7,12 +7,12 @@ const data = [
     },
     {
       id: 2,
-      image: './assets/adp/rektangle2.png',
+      image: './assets/adp/rektangle3.png',
       title: 'Kartu Nama',
     },
     {
       id: 3,
-      image: './assets/adp/rektangle3.png',
+      image: './assets/adp/rektangle2.png',
       title: 'Branding',
     },
     {
@@ -23,12 +23,12 @@ const data = [
     },
     {
       id: 5,
-      image: './assets/adp/rektangle2.png',
+      image: './assets/adp/rektangle3.png',
       title: 'Kartu Nama',
     },
     {
       id: 6,
-      image: './assets/adp/rektangle3.png',
+      image: './assets/adp/rektangle2.png',
       title: 'Branding',
     },
   ];
