@@ -33,11 +33,11 @@ function App() {
         <Route path="/howitworks" element={<HowItWork />} />
         <Route path="/calendarpopup" element={<CalendarPopup />} />
         <Route path="/videodemo" element={<VideoDemo />} />
+        <Route path="/order" element={<Order />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </Router>
-
   );
 }
 
