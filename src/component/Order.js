@@ -5,8 +5,10 @@ function Order() {
 
     const [showMyModal, setShowMyModal] = useState(false);
 
+    const handleOnClose = () => setShowMyModal(false)
+
     return (
-        <div className='px-10 flex mx-auto justify-center'>
+        <div className='px-10 flex justify-center'>
         <div className='flex flex-col lg:w-[678px] lg:h-auto justify-center w-full'>
         <div className='py-20 lg:flex flex-row justify-between items-baseline'>
                 <div className='flex justify-items-start'>
@@ -32,15 +34,15 @@ function Order() {
                         <h4 className='text-lg text-[#455A64]'>Yang kamu dapat:</h4>
                         <div className='flex flex-row'>
                             <img className='lg:w-6 lg:h-6' src='./assets/icon/Check.png' />
-                            <h4 className='text-lg text-[#455A64]'> 1 Bulan Durasi</h4>
+                            <h4 className='ml-1 text-lg text-[#455A64]'> 1 Bulan Durasi</h4>
                         </div>
                         <div className='flex flex-row'>
                             <img className='lg:w-6 lg:h-6' src='./assets/icon/Check.png' />
-                            <h4 className='text-lg text-[#455A64]'> Dedicated Designer Team</h4>
+                            <h4 className='ml-1 text-lg text-[#455A64]'> Dedicated Designer Team</h4>
                         </div>
                         <div className='flex flex-row'>
                             <img className='lg:w-6 lg:h-6' src='./assets/icon/Check.png' />
-                            <h4 className='text-lg text-[#455A64]'> Unlimited Revision</h4>
+                            <h4 className='ml-1 text-lg text-[#455A64]'> Unlimited Revision</h4>
                         </div>
                         
                     </div>
@@ -86,11 +88,11 @@ function Order() {
             </div>
             <div className='py-6 flex flex-col gap-2'>
             <p className=''>By clicking next, you agree to receive communications from DesignXX in accordance with our <b>Privacy Policy.</b></p>
-            <button className='lg:w-[678px] h-12 lg:h-[74px] bg-[#E9520B]'> <p className=''>PILIH METODE PEMBAYARAN</p></button>
+            <button className='lg:w-[678px] h-12 lg:h-[74px] bg-[#E9520B]'> <p className='text-white'>PILIH METODE PEMBAYARAN</p></button>
             </div>
         
         </div>
-        <Paket visible={showMyModal}/>
+        <Paket onClose={handleOnClose} visible={showMyModal}/>
         </div>
         
                 
