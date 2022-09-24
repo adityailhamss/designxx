@@ -7,7 +7,6 @@ import StepTwo from "./component/StepTwo";
 import StepThree from "./component/StepThree";
 import VideoDemo from "./component/VideoDemo";
 import CalendarPopup from "./component/CalendarPopup";
-import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
