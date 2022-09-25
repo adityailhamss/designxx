@@ -18,6 +18,9 @@ import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import Paket from "./component/Paket";
 import Order from "./component/Order";
+import Bca from "./component/payment/BCA";
+import Mandiri from "./component/payment/Mandiri";
+import BNI from "./component/payment/BNI";
 
 function App() {
   return (
@@ -33,6 +36,9 @@ function App() {
         <Route path="/calendarpopup" element={<CalendarPopup />} />
         <Route path="/videodemo" element={<VideoDemo />} />
         <Route path="/order" element={<Order />} />
+        <Route path="/bca" element={<Bca />} />
+        <Route path="/mandiri" element={<Mandiri />} />
+        <Route path="/bni" element={<BNI />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />

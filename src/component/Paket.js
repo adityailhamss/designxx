@@ -27,8 +27,8 @@ function paket({ visible, onClose, handlePaket }) {
               handlePaket("Pro");
             }}
           >
-            <div className="block lg:flex flex-row lg:my-6 gap-2 lg:pl-[52px] ">
-              <div className="flex flex-col w-max gap-2 px-2 ">
+            <div className="block lg:flex flex-row lg:my-6 gap-2 lg:pl-[52px]">
+              <div className="flex flex-col w-max gap-2 px-2">
                 <h1 className="text-3xl text-[#E9520B] font-bold">Pro</h1>
                 <h4 className="text-lg text-[#455A64]">
                   Hanya <s>Rp.5.000.000</s>

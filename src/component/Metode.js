@@ -6,8 +6,22 @@ import bni from "../assets/bni.png";
 import alfamart from "../assets/alfamart.png";
 import indomaret from "../assets/indomaret.png";
 import pos from "../assets/pos.png";
+import { useNavigate } from "react-router-dom";
 
 const Metode = ({ visible, onClose, handlePaket }) => {
+
+  const navigate = useNavigate();
+
+  const BCA = () => {
+    navigate("/bca");
+  };
+  const Mandiri = () => {
+    navigate("/mandiri");
+};
+const BNI = () => {
+  navigate("/bni");
+};
+
   if (!visible) return null;
   return (
     <div className="flex flex-col px-20 py-10 w-auto mx-auto items-center fixed inset-0 bg-opacity-30 backdrop-blur-sm">
@@ -33,27 +47,27 @@ const Metode = ({ visible, onClose, handlePaket }) => {
                   <img alt="" src={mandiri} />
                 </div>
                 <h2>Mandiri Virtual Account</h2>
-                <div className="ml-auto">
+                <button onClick={Mandiri} className="ml-auto">
                   <img alt="" src={drop} />
-                </div>
+                </button>
               </div>
               <div className="flex flex-row items-center gap-4 px-6">
                 <div>
                   <img alt="" src={bca} />
                 </div>
                 <h2>BCA Virtual Account</h2>
-                <div className="ml-auto">
+                <button onClick={BCA} className="ml-auto">
                   <img alt="" src={drop} />
-                </div>
+                </button>
               </div>
               <div className="flex flex-row items-center gap-4 px-6">
                 <div>
                   <img alt="" src={bni} />
                 </div>
                 <h2>BNI Virtual Account</h2>
-                <div className="ml-auto">
+                <button onClick={BNI} className="ml-auto">
                   <img alt="" src={drop} />
-                </div>
+                </button>
               </div>
             </div>
           </div>
