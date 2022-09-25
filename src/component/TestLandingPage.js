@@ -11,7 +11,7 @@ function TestLandingPage() {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "ORANGE 500" }}
+        style={{ ...style, display: "block", background: "orange" }}
         onClick={onClick}
       />
     );
@@ -81,22 +81,21 @@ function TestLandingPage() {
             <br /> solution that can make work work
             <br /> for you.{" "}
           </p>
-          <div className="flex flex-row ">
-            <button className="items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
-              {" "}
-              LIHAT PROJECT{" "}
+          <div className="mx-auto lg:mx-0">
+            <button className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+              <div className="w-full"> LIHAT PROJECT </div>
+              <img
+                className="ml-auto left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#E9520B]"
+                src="assets/img/Icon.png"
+              />
             </button>
-            <img
-              className="left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#E9520B]"
-              src="assets/img/Icon.png"
-            />
           </div>
         </div>
         <div className=" lg:h-[600px] lg:w-[678px]">
           <img src="assets/img/home.png" />
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row items-center  xl:w-[90%] gap-8 mx-auto">
+      <div className="flex flex-col lg:flex-row items-center gap-20 mx-auto">
         <div className="flex flex-col items-end">
           <div className="flex flex-row">
             <h1 className="border-solid border-[1px] mt-[100px] border-[#414141] lg:w-[100px] h-0 items-start"></h1>
@@ -138,19 +137,18 @@ function TestLandingPage() {
             <br />
             you have in mind
           </p>
-          <div className="flex flex-row ">
-            <button className="border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
-              {" "}
-              SELENGKAPNYA{" "}
+          <div className="mx-auto lg:mx-0">
+            <button className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+              <div className="w-full"> SELENGKAPNYA </div>
+              <img
+                className="ml-auto left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#E9520B]"
+                src="assets/img/Icon.png"
+              />
             </button>
-            <img
-              className="left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#E9520B]"
-              src="assets/img/Icon.png"
-            />
           </div>
         </div>
       </div>
-      <div className="flex flex-col-reverse lg:flex-row w-full items-center xl:w-[90%] gap-[75px] lg:ml-20 ">
+      <div className="flex flex-col-reverse lg:flex-row w-full items-center gap-[75px] lg:mx-auto w-auto justify-center">
         <div className="flex flex-col gap-[17px] lg:w-[398px] lg:[h-144px] ">
           <h1 className="font-[Poopins] font-semibold text-[64px] leading-[72px] lg:text-left text-center capitalize text-[#414141]">
             Meet Our
@@ -188,7 +186,7 @@ function TestLandingPage() {
         </div>
       </div>
 
-      <div className="flex flex-col-reverse lg:flex-row w-full gap-[110px] xl:w-[90%] lg:ml-20">
+      <div className="flex flex-col-reverse lg:flex-row w-full gap-[110px] xl:w-[90%] lg:ml-20 justify-center">
         <div className="flex flex-row gap-2">
           <div className="flex flex-col gap-2">
             <img src="assets/img/weDo1.png" alt="logoWedo1" />
@@ -196,15 +194,14 @@ function TestLandingPage() {
           </div>
           <div className="flex flex-col gap-3 lg:w-[281px] lg:h-[381px]">
             <img src="assets/img/weDo3.png" alt="logoWedo3" />
-            <div className="flex flex-row w-full lg:ml-auto">
-              <button className="items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
-                {" "}
-                LIHAT SEMUA{" "}
+            <div>
+              <button className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+                <div className="w-full"> LIHAT PROJECT </div>
+                <img
+                  className="ml-auto left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#E9520B]"
+                  src="assets/img/Icon.png"
+                />
               </button>
-              <img
-                className="left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#E9520B]"
-                src="assets/img/Icon.png"
-              />
             </div>
           </div>
         </div>
@@ -221,7 +218,7 @@ function TestLandingPage() {
           </h1>
         </div>
       </div>
-      <div className="flex flex-col-reverse lg:flex-row w-full xl:w-[90%] gap-[37px] lg:ml-20">
+      <div className="flex flex-col-reverse lg:flex-row w-full xl:w-[90%] gap-[37px] lg:ml-20 justify-center">
         <div className="flex flex-col gap-[37.5px]">
           <h1 className="font-Poppins font-semibold text-[64px] leading-[72px] lg:text-left text-center text-[#414141]">
             Everything
@@ -340,8 +337,8 @@ function TestLandingPage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row lg:flex-row w-full lg:w-[1280px] h-[529px] gap-[67px] bg-[#E9520B]">
-        <div className="flex flex-col gap-[37.5px] ">
+      <div className="flex flex-row lg:flex-row w-full h-[529px] gap-[67px] bg-[#E9520B] justify-center">
+        <div className="flex flex-col gap-[37.5px] mt-10 lg:mt-0">
           <h1 className="font-[Poppins] font-semibold lg:text-[60px] text-4xl lg:text-left text-center lg:mt-[80px] lg:ml-20 leading-[72px] text-white">
             Social Media
             <br />
@@ -352,18 +349,17 @@ function TestLandingPage() {
             <br /> in-house team without the overhead
             <br /> cost.
           </p>
-          <div className="flex flex-row w-[264px] h-[54px] lg:ml-20 gap-8 items-center bg-[#FFD966] ">
-            <button className="text-[#444444] uppercase font-[DM Sans] font-normal text-2xl text-center lg:ml-3">
-              {" "}
-              CONTACT US{" "}
+          <div className="lg:ml-20">
+            <button className="flex flex-row items-center border-solid border-[1px] border-[#FFD966] w-[307px] h-[54px] left-[106px] bg-[#FFD966] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+              <div className="w-full text-black"> CONTACT US </div>
+              <img
+                className="ml-auto left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#FFD966] mr-5"
+                src="assets/img/btn-us.png"
+              />
             </button>
-            <img
-              className=" w-6 h-6 left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#FFD966]"
-              src="assets/img/btn-us.png"
-            />
           </div>
         </div>
-        <div className="flex flex-row lg:flex-row">
+        <div className="xl:flex flex-row lg:flex-row hidden">
           <img src="assets/img/phone1.png" alt="Iconbtn"></img>
           <div className="flex flex-col gap-[81px]">
             <img
@@ -380,7 +376,7 @@ function TestLandingPage() {
         PLANS THAT
         <br /> WORK FOR YOU
       </h1>
-      <div className="flex flex-cols w-full lg:ml-20">
+      <div className="flex flex-cols w-full lg:ml-20 justify-center">
         <div className="flex flex-col lg:flex-row gap-[34px]">
           <div className="flex flex-col items-center p-6 gap-[33px] h-[545px] w-[317px] bg-[#F9F7F7] border-solid border-[1px] border-[#CED2D3]">
             <div className="w-[256px] h-[161px] gap-2">
@@ -526,7 +522,7 @@ function TestLandingPage() {
           COBA SEKARANG
         </button>
       </div>
-      <div className="lg:w-[1000px] gap-[20px] lg:ml-[130px]">
+      <div className="lg:w-[1000px] gap-[20px] lg:mx-auto justify-center">
         <Slider {...settings}>
           {data.map((item) => (
             <div className="flex flex-col gap-1">
