@@ -376,7 +376,7 @@ function TestLandingPage() {
         PLANS THAT
         <br /> WORK FOR YOU
       </h1>
-      <div className="flex flex-cols w-full lg:ml-20 justify-center">
+      <div className="flex flex-cols w-full justify-center">
         <div className="flex flex-col lg:flex-row gap-[34px]">
           <div className="flex flex-col items-center p-6 gap-[33px] h-[545px] w-[317px] bg-[#F9F7F7] border-solid border-[1px] border-[#CED2D3]">
             <div className="w-[256px] h-[161px] gap-2">
@@ -527,7 +527,7 @@ function TestLandingPage() {
           {data.map((item) => (
             <div className="flex flex-col gap-1">
               <p className="text-center">{item.title}</p>
-              <img className="ml-6" src={item.image} alt={item.title} />
+              <img className="mx-auto" src={item.image} alt={item.title} />
             </div>
           ))}
         </Slider>
