@@ -1,11 +1,30 @@
 import React from "react";
 import Slider from "react-slick";
-
+import { useNavigate } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import data from "../data/data";
 
+
 function TestLandingPage() {
+  const navigate = useNavigate();
+
+  const Order = () => {
+    navigate("/Order");
+  };
+
+  const Demo = () => {
+    navigate("/Demo");
+  };
+
+  const HowItWorks = () => {
+    navigate("/HowItWorks");
+  };
+
+  const Portfolio = () => {
+    navigate("/Portfolio");
+  };
+
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -82,7 +101,7 @@ function TestLandingPage() {
             <br /> for you.{" "}
           </p>
           <div className="mx-auto lg:mx-0">
-            <button className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+            <button onClick={Portfolio} className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
               <div className="w-full"> LIHAT PROJECT </div>
               <img
                 className="ml-auto left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#E9520B]"
@@ -138,7 +157,7 @@ function TestLandingPage() {
             you have in mind
           </p>
           <div className="mx-auto lg:mx-0">
-            <button className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+            <button onClick={HowItWorks} className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
               <div className="w-full"> SELENGKAPNYA </div>
               <img
                 className="ml-auto left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#E9520B]"
@@ -162,9 +181,11 @@ function TestLandingPage() {
             500 companies
           </p>
           <div className="flex flex-row gap-8 items-center lg:text-left lg:justify-start justify-center">
+          <a href ="https://wa.me/6281355538777">
             <button className="font-sans font-normal text-2xl leading-[54px] uppercase text-[#E9520B] lg:text-left text-center">
               CONTACT US
             </button>
+            </a>
             <img
               className=" h-6 left-[35.79%] right-[33.33%] top-[25%] bottom-[25%]"
               src="assets/img/icon1.png"
@@ -195,7 +216,7 @@ function TestLandingPage() {
           <div className="flex flex-col gap-3 lg:w-[281px] lg:h-[381px]">
             <img src="assets/img/weDo3.png" alt="logoWedo3" />
             <div>
-              <button className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+              <button onClick={Portfolio} className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
                 <div className="w-full"> LIHAT PROJECT </div>
                 <img
                   className="ml-auto left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#E9520B]"
@@ -230,7 +251,7 @@ function TestLandingPage() {
             <br /> cost.
           </p>
           <div className="flex flex-row gap-8 items-center lg:text-left lg:justify-start justify-center">
-            <button className="font-sans font-normal text-2xl leading-[54px] uppercase text-[#E9520B] lg:text-left text-center">
+            <button onClick={HowItWorks} className="font-sans font-normal text-2xl leading-[54px] uppercase text-[#E9520B] lg:text-left text-center">
               SELENGKAPNYA
             </button>
             <img
@@ -350,6 +371,7 @@ function TestLandingPage() {
             <br /> cost.
           </p>
           <div className="lg:ml-20">
+          <a href ="https://wa.me/6281355538777">
             <button className="flex flex-row items-center border-solid border-[1px] border-[#FFD966] w-[307px] h-[54px] left-[106px] bg-[#FFD966] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
               <div className="w-full text-black"> CONTACT US </div>
               <img
@@ -357,6 +379,7 @@ function TestLandingPage() {
                 src="assets/img/btn-us.png"
               />
             </button>
+            </a>
           </div>
         </div>
         <div className="xl:flex flex-row lg:flex-row hidden">
@@ -393,7 +416,7 @@ function TestLandingPage() {
                 / Month
               </p>
             </div>
-            <button className="items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center">
+            <button onClick={Order} className="items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center">
               {" "}
               PILIH
             </button>
@@ -437,7 +460,7 @@ function TestLandingPage() {
                 / Month
               </p>
             </div>
-            <button className="items-center justify-center border-solid border-[1px] bg-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+            <button onClick={Order} className="items-center justify-center border-solid border-[1px] bg-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
               {" "}
               PILIH
             </button>
@@ -481,7 +504,7 @@ function TestLandingPage() {
                 / Month
               </p>
             </div>
-            <button className="items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center">
+            <button onClick={Order} className="items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center">
               {" "}
               PILIH
             </button>
@@ -518,7 +541,7 @@ function TestLandingPage() {
           <br />
           we can design it.
         </h1>
-        <button className="w-[296px] h-[54px] bg-[#E9520B] rounded-[4px] font-sans font-normal text-2xl leading-[54px] text-center uppercase text-white">
+        <button onClick={Demo} className="w-[296px] h-[54px] bg-[#E9520B] rounded-[4px] font-sans font-normal text-2xl leading-[54px] text-center uppercase text-white">
           COBA SEKARANG
         </button>
       </div>
