@@ -20,7 +20,7 @@ const VideoDemo = () => {
   };
 
   return (
-    <div className="bg-gray-300 flex flex-col justify-items-end">
+    <div className="flex flex-col justify-items-end">
       <div className="flex flex-row justify-center lg:justify-end px-32 pt-10">
         <button onClick={Demo}>
           <img src={iconClose} alt="" />
