@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import data from "../data/data";
 
-
 function TestLandingPage() {
   const navigate = useNavigate();
 
@@ -30,7 +29,12 @@ function TestLandingPage() {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "orange" }}
+        style={{
+          ...style,
+          display: "block",
+          background: "orange",
+          borderRadius: "50%",
+        }}
         onClick={onClick}
       />
     );
@@ -41,7 +45,12 @@ function TestLandingPage() {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "orange" }}
+        style={{
+          ...style,
+          display: "block",
+          background: "orange",
+          borderRadius: "50%",
+        }}
         onClick={onClick}
       />
     );
@@ -101,7 +110,10 @@ function TestLandingPage() {
             <br /> for you.{" "}
           </p>
           <div className="mx-auto lg:mx-0">
-            <button onClick={Portfolio} className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+            <button
+              onClick={Portfolio}
+              className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center"
+            >
               <div className="w-full"> LIHAT PROJECT </div>
               <img
                 className="ml-auto left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#E9520B]"
@@ -157,7 +169,10 @@ function TestLandingPage() {
             you have in mind
           </p>
           <div className="mx-auto lg:mx-0">
-            <button onClick={HowItWorks} className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+            <button
+              onClick={HowItWorks}
+              className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center"
+            >
               <div className="w-full"> SELENGKAPNYA </div>
               <img
                 className="ml-auto left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#E9520B]"
@@ -181,10 +196,10 @@ function TestLandingPage() {
             500 companies
           </p>
           <div className="flex flex-row gap-8 items-center lg:text-left lg:justify-start justify-center">
-          <a href ="https://wa.me/6281355538777">
-            <button className="font-sans font-normal text-2xl leading-[54px] uppercase text-[#E9520B] lg:text-left text-center">
-              CONTACT US
-            </button>
+            <a href="https://wa.me/6285722159221">
+              <button className="font-sans font-normal text-2xl leading-[54px] uppercase text-[#E9520B] lg:text-left text-center">
+                CONTACT US
+              </button>
             </a>
             <img
               className=" h-6 left-[35.79%] right-[33.33%] top-[25%] bottom-[25%]"
@@ -216,7 +231,10 @@ function TestLandingPage() {
           <div className="flex flex-col gap-3 lg:w-[281px] lg:h-[381px]">
             <img src="assets/img/weDo3.png" alt="logoWedo3" />
             <div>
-              <button onClick={Portfolio} className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+              <button
+                onClick={Portfolio}
+                className="flex flex-row items-center border-solid border-[1px] border-[#E9520B] w-[307px] h-[54px] left-[106px] bg-[#E9520B] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center"
+              >
                 <div className="w-full"> LIHAT PROJECT </div>
                 <img
                   className="ml-auto left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#E9520B]"
@@ -251,7 +269,10 @@ function TestLandingPage() {
             <br /> cost.
           </p>
           <div className="flex flex-row gap-8 items-center lg:text-left lg:justify-start justify-center">
-            <button onClick={HowItWorks} className="font-sans font-normal text-2xl leading-[54px] uppercase text-[#E9520B] lg:text-left text-center">
+            <button
+              onClick={HowItWorks}
+              className="font-sans font-normal text-2xl leading-[54px] uppercase text-[#E9520B] lg:text-left text-center"
+            >
               SELENGKAPNYA
             </button>
             <img
@@ -359,7 +380,7 @@ function TestLandingPage() {
         </div>
       </div>
       <div className="flex flex-row lg:flex-row w-full h-[529px] gap-[67px] bg-[#E9520B] justify-center">
-        <div className="flex flex-col gap-[37.5px] mt-10 lg:mt-0">
+        <div className="flex flex-col gap-[37.5px] mt-10 lg:mt-0 mx-auto">
           <h1 className="font-[Poppins] font-semibold lg:text-[60px] text-4xl lg:text-left text-center lg:mt-[80px] lg:ml-20 leading-[72px] text-white">
             Social Media
             <br />
@@ -371,28 +392,28 @@ function TestLandingPage() {
             <br /> cost.
           </p>
           <div className="lg:ml-20">
-          <a href ="https://wa.me/6281355538777">
-            <button className="flex flex-row items-center border-solid border-[1px] border-[#FFD966] w-[307px] h-[54px] left-[106px] bg-[#FFD966] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
-              <div className="w-full text-black"> CONTACT US </div>
-              <img
-                className="ml-auto left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#FFD966] mr-5"
-                src="assets/img/btn-us.png"
-              />
-            </button>
+            <a href="https://wa.me/6285722159221">
+              <button className="flex flex-row items-center border-solid border-[1px] border-[#FFD966] w-[307px] h-[54px] left-[106px] bg-[#FFD966] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+                <div className="w-full text-black"> CONTACT US </div>
+                <img
+                  className="ml-auto left-[35.79%] right-[33.33%] top-[25%] bottom-[25%] bg-[#FFD966] mr-5"
+                  src="assets/img/btn-us.png"
+                />
+              </button>
             </a>
           </div>
         </div>
-        <div className="xl:flex flex-row lg:flex-row hidden">
+        <div className="xl:flex flex-row lg:flex-row hidden ml-auto">
           <img src="assets/img/phone1.png" alt="Iconbtn"></img>
           <div className="flex flex-col gap-[81px]">
             <img
               className="w-[235px] h-[439px]"
-              src="assets/adp/hp2.png"
+              src="assets/img/phone3.png"
               alt="Iconbtn"
             ></img>
             <img src="assets/adp/hp4.png" alt="Iconbtn" />
           </div>
-          <img src="assets/img/phone1.png" alt="Iconbtn" />
+          <img src="assets/adp/hp3.png" alt="Iconbtn" />
         </div>
       </div>
       <h1 className="font-[Poppins] font-semibold text-[64px] leading-[72px] text-center gap-[68px] text-[#414141]">
@@ -416,7 +437,10 @@ function TestLandingPage() {
                 / Month
               </p>
             </div>
-            <button onClick={Order} className="items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center">
+            <button
+              onClick={Order}
+              className="items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center"
+            >
               {" "}
               PILIH
             </button>
@@ -460,7 +484,10 @@ function TestLandingPage() {
                 / Month
               </p>
             </div>
-            <button onClick={Order} className="items-center justify-center border-solid border-[1px] bg-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center">
+            <button
+              onClick={Order}
+              className="items-center justify-center border-solid border-[1px] bg-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-white uppercase font-[DM Sans] font-normal text-2xl text-center"
+            >
               {" "}
               PILIH
             </button>
@@ -504,7 +531,10 @@ function TestLandingPage() {
                 / Month
               </p>
             </div>
-            <button onClick={Order} className="items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center">
+            <button
+              onClick={Order}
+              className="items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center"
+            >
               {" "}
               PILIH
             </button>
@@ -541,7 +571,10 @@ function TestLandingPage() {
           <br />
           we can design it.
         </h1>
-        <button onClick={Demo} className="w-[296px] h-[54px] bg-[#E9520B] rounded-[4px] font-sans font-normal text-2xl leading-[54px] text-center uppercase text-white">
+        <button
+          onClick={Demo}
+          className="w-[296px] h-[54px] bg-[#E9520B] rounded-[4px] font-sans font-normal text-2xl leading-[54px] text-center uppercase text-white"
+        >
           COBA SEKARANG
         </button>
       </div>

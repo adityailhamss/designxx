@@ -48,12 +48,16 @@ const Footer = () => {
               </div>
               <p className="text-[#9F9F9F]">info@designxx.com</p>
             </li>
+            <li className="flex flex-row gap-4">
+              <div className="my-auto">Call</div>
+              <p className="text-[#9F9F9F]">0857-2215-9221</p>
+            </li>
           </ul>
         </div>
       </div>
       <div className="py-4 border-t-2 lg:px-20 pb-20 text-[#414141]">
         <p className="font-bold text-sm text-center lg:text-left">
-          Design XX Corp | Powered by BAS-IT Studio
+          Design XX Corp | Powered by BAS-IT Studio | Supported by BAS-IT Studio
         </p>
       </div>
     </>
