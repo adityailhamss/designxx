@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import data from "../data/data";
 
-function TestLandingPage() {
+function TestLandingPage({handlePaket}) {
   const navigate = useNavigate();
 
   const Order = () => {
@@ -438,7 +438,10 @@ function TestLandingPage() {
               </p>
             </div>
             <button
-              onClick={Order}
+              onClick={() => {
+                Order();
+                handlePaket("Mingguan");
+              }}
               className="items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center"
             >
               {" "}

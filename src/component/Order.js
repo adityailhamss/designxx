@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Metode from "./Metode";
 import Paket from "./Paket";
+import axios from 'axios'
 
 function Order() {
   const [showMyModal, setShowMyModal] = useState(false);
@@ -31,7 +32,7 @@ function Order() {
     perusahaan: "",
   });
   const navigate = useNavigate();
-  const handleClick = (event) => {
+  const handleClick = async (event) => {
     if (
       nama === "" ||
       alamat === "" ||
@@ -41,7 +42,20 @@ function Order() {
     ) {
       window.alert("Please input all the fields below.");
     } else {
-      setShowMetode(true);
+      await axios.post('http://localhost:5000/form', {
+        name: nama,
+        email,
+        payment_type: 'permata',
+        transaction_details: {
+          order_id: `Order-${Math.floor((Math.random() * 789))}`,
+          gross_amount: 50000
+        }
+      }).then((res) => {
+        console.log(res.data)
+        setShowMetode(true);        
+      }).catch((err) => {
+        console.log(err)
+      })
     }
   };
   const { nama, alamat, email, handphone, perusahaan } = formValue;
