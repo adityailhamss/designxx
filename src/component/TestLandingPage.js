@@ -438,10 +438,7 @@ function TestLandingPage({handlePaket}) {
               </p>
             </div>
             <button
-              onClick={() => {
-                Order();
-                handlePaket("Mingguan");
-              }}
+              onClick={Order}
               className="items-center justify-center border-solid border-[1px] border-[#E9520B] lg:w-[275px] lg:h-[54px] rounded text-[#E9520B] uppercase font-[DM Sans] font-normal text-2xl text-center"
             >
               {" "}

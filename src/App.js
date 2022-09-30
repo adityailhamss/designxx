@@ -1,4 +1,4 @@
-import "./App.css";
+
 import LandingPage from "./component/LandingPage";
 import TestLandingPage from "./component/TestLandingPage";
 import Portfolio from "./component/Portfolio";
